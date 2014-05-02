@@ -2,11 +2,11 @@
 
 ## Table of contents
 
-* Requirements
-* Description
-* Tentative Schedule
-* Assignments
-* Hackaton?
+* [Requirements](#requirements)
+* [Description](#description)
+* [Tentative Schedule](#tentative-schedule)
+* [Assignments](#assignments)
+* [Hackaton?](#hackaton)
 
 
 ## Requirements
@@ -14,7 +14,7 @@
 * Any OS will work. Windows 7 or greater, OSX or Ubuntu.
 * Git
 * Note taking. Please create a document on google drive and we will share [it here](http://goo.gl/mvIc8Z)
-* [BlueJ](bluej.org)
+* [BlueJ](http://bluej.org)
 * [Sublime Text](http://www.sublimetext.com/2) with [Package Manager](https://sublime.wbond.net/)
 
 ## Description
