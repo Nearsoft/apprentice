@@ -56,7 +56,7 @@ Nearsoft Apprentice will focus on the main concepts that are required for any so
 	* Dependency inversion
 
 #### Note:
-* All session will be recorded in __Spanish__ until this point.
+* All session will be recorded in __Spanish__ until this point. Link to sessions will be updated here as well.
 * After SOLID principle will see if we can move to __English__ classes.
 * After this day we will move to using __IntelliJ__ as our [IDE](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0CCUQFjAA&url=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FIntegrated_development_environment&ei=U9tjU_vTI8W2yAT9oYDYCw&usg=AFQjCNGzsgW3CZUA74q_DmV7NnnkIxNZIw&bvm=bv.65636070,bs.1,d.cGU).
 
