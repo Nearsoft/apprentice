@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Inventory()
+comment1.params=guitar
+comment1.target=void\ addGuitar(Guitar)
+comment2.params=
+comment2.target=int\ getLength()
+numComments=3

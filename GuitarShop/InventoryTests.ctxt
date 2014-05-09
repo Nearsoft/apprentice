@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.params=
+comment0.target=InventoryTests()
+comment0.text=\r\n\ Default\ constructor\ for\ test\ class\ InventoryTests\r\n
+comment1.params=
+comment1.target=void\ ItShouldAddGuitarToInventory()
+numComments=2
