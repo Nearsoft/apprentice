@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Invoking a function</title>
+</head>
+<body>
+  <h1>Small recap</h1>
+  <hr />
+  <h2>Invoking a Function</h2>
+  <p>Functions are invoked using four different scenarios or patterns:</p>
+  <ul>
+    <li>As a function</li>
+    <li>As a method</li>
+    <li>As a constructor</li>
+    <li>Using apply() or call()</li>
+  </ul>
+
+  <h2>Prototypes</h2>
+
+  <ul>
+    <li>All objects are descended from <bold>Object</bold></li>
+    <li>All objects inherit methods and properties from Object.prototype</li>
+    <li>Properties and methods can be overwritten. For example: toString().</li>
+    <li>Changes to the Object prototype are propagated to all objects.</li>
+  </ul>
+  
+  <a href="each.html">Excercise</a>
+</body>
+<script>
+  // function pattern
+  var myFunction = function () {
+    return 'foo';
+  }
+
+  console.log(myFunction());
+
+  //method pattern
+  var myObject = {
+    myFunction: function () {
+      return 'bar';
+    }
+  }
+
+  console.log(myObject.myFunction());
+
+  //constructor pattern
+  var Hector = function () {
+    this.living = true;
+    this.age = 28;
+    this.gender = 'male';
+    this.getGender = function () {
+      return this.gender;
+    }
+    this.toString = function () {
+      return 'I love JS';
+    }
+  }
+
+  var hector = new Hector();
+  console.log(hector);
+  console.log(hector.getGender()); //male
+  console.log(hector.toString());
+
+  //Apply or Call
+  var greet = {
+    runGreet: function () {
+      console.log(this.name, arguments[0], arguments[1]);
+    }
+  }
+
+  console.log(greet.runGreet()); //undefined * 3
+
+  var hector = {
+    name: 'Hector'
+  }
+
+  var lisa = {
+    name: 'lisa'
+  }
+
+  //invoke the runGreet function as if it were inside of the hector object.
+  greet.runGreet.call(hector, 'foo', 'bar'); //foo and bar are the arguments
+
+  //invoke the runGreet function as if it were inside of the lisa object.
+  greet.runGreet.apply(lisa, ['foo', 'bar']); 
+
+  //Magic
+  var arrayOfNumbers = [1,4,60,8,40,37,58,62,693,7,347,54,32,62,11,432,59];
+  var biggest = Math.max.apply(null, arrayOfNumbers);
+  var smallest = Math.min.apply(null, arrayOfNumbers);
+
+  console.log(biggest);
+  console.log(smallest);
+
+  //Prototypes
+  var Person = function () {
+    this.canTalk = true;
+    this.greet = function () {
+      if (this.canTalk) {
+        console.log("Hi, I'm " + this.name);
+      };
+    }
+  }
+
+  var Employee = function (name, title) {
+    this.name = name;
+    this.title = title;
+    this.greet = function () {
+      if (this.canTalk) {
+        console.log("Hi I'm " + this.name + ", the " + this.title);
+      }
+    }
+  }
+
+  Employee.prototype = new Person(); //ya no es object, Persona proto == Object
+
+  var Customer = function (name) {
+    this.name = name;
+  }
+
+  Customer.prototype = new Person();
+
+  var Mime = function (name) {
+    this.name = name;
+    this.canTalk = false;
+  }
+
+  Mime.prototype = new Person();
+
+  var bob = new Employee('Bob', 'Builder');
+  var joe = new Customer('Joe');
+  var rg = new Employee('Red Green', 'Handyman');
+  var mike = new Customer('Mike');
+  var mime = new Mime('Mime');
+
+  console.log(bob.greet());
+  console.log(joe.greet());
+  console.log(rg.greet());
+  console.log(mike.greet());
+  console.log(mime.greet());
+
+</script>
+</html>
