@@ -1,6 +1,0 @@
-\\psf\Home\development\nearsoft\apprentice\Sesiones\Arboles\Trees\bin\Debug\Trees.exe.config
-\\psf\Home\development\nearsoft\apprentice\Sesiones\Arboles\Trees\bin\Debug\Trees.exe
-\\psf\Home\development\nearsoft\apprentice\Sesiones\Arboles\Trees\bin\Debug\Trees.pdb
-\\psf\Home\development\nearsoft\apprentice\Sesiones\Arboles\Trees\obj\Debug\Trees.csprojResolveAssemblyReference.cache
-\\psf\Home\development\nearsoft\apprentice\Sesiones\Arboles\Trees\obj\Debug\Trees.exe
-\\psf\Home\development\nearsoft\apprentice\Sesiones\Arboles\Trees\obj\Debug\Trees.pdb

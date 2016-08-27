@@ -1,4 +1,0 @@
-#BlueJ class context
-comment0.params=serialNumber\ price\ builder\ model\ type\ backWood\ topWood
-comment0.target=Guitar(java.lang.String,\ double,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String)
-numComments=1
