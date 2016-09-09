@@ -19,7 +19,7 @@ Nearsoft Apprentice will focus on the main concepts that are required for any so
 
 * ~~Intro to Ruby~~
 * ~~Styling with Sass and Friends~~
-* Calculating π with Object-Oriented and Test-Driven Development
+* ~~Calculating π with Object-Oriented and Test-Driven Development~~
 * Playing with APIs
 * I18n
 * Let's Talk Databases
