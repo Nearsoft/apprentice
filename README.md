@@ -20,12 +20,12 @@ Nearsoft Apprentice will focus on the main concepts that are required for any so
 * ~~Intro to Ruby~~
 * ~~Styling with Sass and Friends~~
 * ~~Calculating π with Object-Oriented and Test-Driven Development~~
+* ~~Basics of Git~~
 * Playing with APIs
 * I18n
 * Let's Talk Databases
 * How to build a twitter bot
 * Beginners Rails Programming
-* Basics of Git
 * Be Agile!
 * Introduction to sorting algorithms
 * Hello world in the Go Programming Language
