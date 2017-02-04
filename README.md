@@ -1,36 +1,30 @@
 # Nearsoft Apprentice
 
-## Table of contents
-
 * [Requirements](#requirements)
 * [Description](#description)
-* [Topics](#topics)
+* [Content](#content)
 
 ## Requirements
 
 * Any OS will work. Windows 7 or greater, OS X or Ubuntu.
-* If class require specifics, we will let you know
+* If class require specifics, we will let you know.
 
 ## Description
-Nearsoft Apprentice will focus on the main concepts that are required for any software developer.
+Nearsoft apprentice is a program focused to everyone who wants to learn about software development. Sessions will help the assistants to improve their tech and soft skills.
 
-## Topics
-###### (Order will change)
+## Content
 
-* ~~Intro to Ruby~~
-* ~~Styling with Sass and Friends~~
-* ~~Calculating π with Object-Oriented and Test-Driven Development~~
-* ~~Basics of Git~~
-* Playing with APIs
-* I18n
-* Let's Talk Databases
-* How to build a twitter bot
-* Beginners Rails Programming
-* Be Agile!
-* Introduction to sorting algorithms
-* Hello world in the Go Programming Language
-* Hello world in the Elixir Programming Language
-* Ruby on Rails Best Practices
-* JHipster in Action
-* Java 8 in Action
-* React in Action
+#### Month #1: Web development
+
+* [Terminal](https://slides.com/cristiancota-1/apprentice) - 02/03/2017
+* Basic concepts
+* HTML, CSS
+* Javascript: first steps.
+
+#### Month #2: Javascript
+#### Month #3: Web frameworks
+#### Month #4: Oriented Object Programming
+#### Month #5: Backend
+#### Month #6: Devops
+
+If you are interested to join, send us an email to <apprentice@nearsoft.com>.
