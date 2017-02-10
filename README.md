@@ -16,8 +16,8 @@ Nearsoft apprentice is a program focused to everyone who wants to learn about so
 
 #### Month #1: Web development
 
-* [Terminal](https://slides.com/cristiancota-1/apprentice) - 02/03/2017
-* Basic concepts
+* [Terminal](https://slides.com/cristiancota-1/apprentice) - 03/02/2017
+* [Basic concepts](http://slides.com/cristiancota-1/basic-concepts#/) - 10/02/2017
 * HTML, CSS
 * Javascript: first steps.
 
