@@ -25,7 +25,7 @@ Nearsoft apprentice is a program focused to everyone who wants to learn about so
 * Javascript 101 pt1
 * Javascript 101 pt2
 * Jquery
-* Wildcard!!
+* Git
 
 #### Month #3: Web frameworks
 #### Month #4: Oriented Object Programming
