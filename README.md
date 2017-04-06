@@ -28,6 +28,10 @@ Nearsoft apprentice is a program focused to everyone who wants to learn about so
 * Git
 
 #### Month #3: Web frameworks
+* Bootstrap
+* Angular
+* React
+
 #### Month #4: Oriented Object Programming
 #### Month #5: Backend
 #### Month #6: Devops
