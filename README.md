@@ -6,15 +6,16 @@
 
 ## Requirements
 
-* Laptop with any OS will work. Windows 7 or greater, OS X or Ubuntu.
-* Docker installed.
+* University student or anyone able to understand any programming language.
+* Laptop with UNIX based OS (Mac OSX or any linux distribution).
 
 ## Description
+
 Nearsoft apprentice is a program focused to everyone who wants to learn about software development. Sessions will help the assistants to improve their tech and soft skills.
 
 ## Content
 
-### 1. Objective/How internet works (02/09)
+### 1. Objective/How internet works (Feb 09)
 * Who we are
 * Apprentice overview
 * Request life cycle
@@ -29,7 +30,7 @@ Nearsoft apprentice is a program focused to everyone who wants to learn about so
 * HTTP code
 
 
-### 2. Terminal (02/16)
+### 2. Terminal (Feb 16)
 * What's a terminal?
 * Bash
 * Shell
@@ -42,8 +43,12 @@ Nearsoft apprentice is a program focused to everyone who wants to learn about so
 * Softlinks
 * Processes
 
+```
+🏁 🎉 Move around file system with terminal 🎉 🏁
+```
 
-### 3. Git (02/23)
+
+### 3. Git (Feb 23)
 * Workflow
 * Commands:
     * status
@@ -60,19 +65,19 @@ Nearsoft apprentice is a program focused to everyone who wants to learn about so
     * Fork repo -> commit -> PR
 
 ```
-🏁 🎉 Move around file system with terminal, accomplish a Pull Request to Apprentice repository 🎉 🏁
+🏁 🎉 Accomplish a Pull Request to Apprentice repository 🎉 🏁
 ```
 
 
-### 4. Basic concepts (03/02)
-* http://slides.com/cristiancota/basic-concepts#/8
+### 4. Basic concepts (Mar 02)
+* http://slides.com/cristiancota/basic-concepts#/
 
 
-### 5. HTML (03/09)
+### 5. HTML (Mar 09)
 * http://slides.com/cristiancota/html-css#/
 
 
-### 6. CSS (03/16)
+### 6. CSS (Mar 16)
 * http://slides.com/cristiancota/html-css#/
 
 ```
@@ -80,11 +85,11 @@ Nearsoft apprentice is a program focused to everyone who wants to learn about so
 ```
 
 
-### 7. Javascript (03/23)
+### 7. Javascript (Mar 23)
 * Javascripting -> https://www.github.com/sethvincent/javascripting
 
 
-### 8. React (03/30)
+### 8. React (Apr 06)
 * React overview
 * What's a component?
 * State
@@ -93,7 +98,7 @@ Nearsoft apprentice is a program focused to everyone who wants to learn about so
 * Create application components
 
 
-### 9. Bootstrap (04/06)
+### 9. Bootstrap (Apr 13)
 * Overview
 * Grids
 * Add classes to components
@@ -103,7 +108,7 @@ Nearsoft apprentice is a program focused to everyone who wants to learn about so
 ```
 
 
-### 10. OOP (04/13)
+### 10. OOP (Apr 20)
 * Pilars
     * Abstraction
     * Encapsulation
@@ -111,11 +116,11 @@ Nearsoft apprentice is a program focused to everyone who wants to learn about so
     * Polymorphism
 
 
-### 11. Ruby (04/20)
+### 11. Ruby (Apr 27)
 * http://slides.com/carloscontreiras/deck-6
 
 
-### 12. API/Rails (04/27)
+### 12. API/Rails (May 04)
 * What's an API?
     * Endpoints
 * What's Rails?
@@ -127,7 +132,7 @@ Nearsoft apprentice is a program focused to everyone who wants to learn about so
 * Controller
 
 
-### 13. Rails II (05/04)
+### 13. Rails II (May 11)
 * Models
 * Active Record
 * Build an endpoint
@@ -138,7 +143,7 @@ Nearsoft apprentice is a program focused to everyone who wants to learn about so
 ```
 
 
-### 14. Redux (05/11)
+### 14. Redux (May 18)
 * Overview
 * Store
 * Action creator
@@ -149,13 +154,13 @@ Nearsoft apprentice is a program focused to everyone who wants to learn about so
 ```
 
 
-### 15. Testing (05/18)
+### 15. Testing (May 25)
 * Unit test
 * Integration Testing
 * Continuous Integration
 
 
-### 16. QA (05/25)
+### 16. QA (Jun 01)
 * White box
 * Black box
 * Terminology
