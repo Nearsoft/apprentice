@@ -12,7 +12,9 @@
 ## Description
 Nearsoft apprentice is a program focused to everyone who wants to learn about software development. Sessions will help the assistants to improve their tech and soft skills.
 
-## 1. Objective/How internet works
+## Content
+
+### 1. Objective/How internet works
 * Who we are
 * Apprentice overview
 * Request life cycle
@@ -26,7 +28,7 @@ Nearsoft apprentice is a program focused to everyone who wants to learn about so
 * HTTP verbs
 * HTTP code
 
-## 2. Terminal
+### 2. Terminal
 * What's a terminal?
 * Bash
 * Shell
@@ -39,8 +41,7 @@ Nearsoft apprentice is a program focused to everyone who wants to learn about so
 * Softlinks
 * Processes
 
-## 3. Git
-#### Move around with terminal, accomplish a Pull Request to Apprentice repository
+### 3. Git
 * Workflow
 * Commands:
     * status
@@ -56,19 +57,27 @@ Nearsoft apprentice is a program focused to everyone who wants to learn about so
 * Exercise
     * Fork repo -> commit -> PR
 
-## 4. Basic concepts
+#### Move around with terminal, accomplish a Pull Request to Apprentice repository
+
+
+### 4. Basic concepts
 * http://slides.com/cristiancota/basic-concepts#/8
 
-## 5. HTML & CSS
-####  Create HTML elements and style them CSS
+### 5. HTML
 * http://slides.com/cristiancota/html-css#/
 
 
-## 6. Javascript
+### 6. CSS
+* http://slides.com/cristiancota/html-css#/
+
+####  Create HTML elements and style them using CSS
+
+
+### 7. Javascript
 * Javascripting -> https://www.github.com/sethvincent/javascripting
 
 
-## 7. React
+### 8. React
 * React overview
 * What's a component?
 * State
@@ -76,46 +85,68 @@ Nearsoft apprentice is a program focused to everyone who wants to learn about so
 * Component life cycle
 * Create application components
 
-## 8. Bootstrap
-#### Application
+
+### 9. Bootstrap
 * Overview
 * Grids
 * Add classes to components
 
+#### To have React components stylized
 
-## 9. OOP by Erick
+
+### 10. OOP
 * Pilars
     * Abstraction
     * Encapsulation
     * Hierarchy
     * Polymorphism
 
-## 10. Ruby
+### 11. Ruby
 * http://slides.com/carloscontreiras/deck-6
 
-## 11. API/Rails
-#### API ready to be consumed
+### 12. API/Rails
 * What's an API?
     * Endpoints
 * What's Rails?
-* Build Endpoints
 * MVC
 * Create Rails project
-* Rails Server
-* Controller
 * Gems
 * Routes
+* Rails Server
+* Controller
+
+
+### 13. Rails II
 * Models
 * Active Record
-* Build API
+* Build an endpoint
+* Build project API
 
-## 12. Redux
-#### Comunication between frontend and backend
+#### API ready to be consumed
+
+
+### 14. Redux
 * Overview
 * Store
 * Action creator
 * Reducer
 
-## QA
+#### Comunication ready between frontend and backend
+
+
+### 15. Testing
+* Unit test
+* Integration Testing
+* Continuous Integration
+
+
+### 16. QA
+* White box
+* Black box
+* Terminology
+* Exploratory
+* Sprints
+* Continuous Deliverly
+
 
 If you are interested to join, send us an email to <apprentice@nearsoft.com>.
