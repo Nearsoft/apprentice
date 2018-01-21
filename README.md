@@ -28,6 +28,7 @@ Nearsoft apprentice is a program focused to everyone who wants to learn about so
 * HTTP verbs
 * HTTP code
 
+
 ### 2. Terminal (02/16)
 * What's a terminal?
 * Bash
@@ -40,6 +41,7 @@ Nearsoft apprentice is a program focused to everyone who wants to learn about so
 * Create commands
 * Softlinks
 * Processes
+
 
 ### 3. Git (02/23)
 * Workflow
@@ -58,13 +60,13 @@ Nearsoft apprentice is a program focused to everyone who wants to learn about so
     * Fork repo -> commit -> PR
 
 ```
-🏁 Move around file system with terminal, accomplish a Pull Request to Apprentice repository 🏁 
+🏁 🎉 Move around file system with terminal, accomplish a Pull Request to Apprentice repository 🎉 🏁
 ```
-
 
 
 ### 4. Basic concepts (03/02)
 * http://slides.com/cristiancota/basic-concepts#/8
+
 
 ### 5. HTML (03/09)
 * http://slides.com/cristiancota/html-css#/
@@ -74,7 +76,7 @@ Nearsoft apprentice is a program focused to everyone who wants to learn about so
 * http://slides.com/cristiancota/html-css#/
 
 ```
-🏁 Create HTML elements and style them using CSS 🏁
+🏁 🎉 Create HTML elements and style them using CSS 🎉 🏁
 ```
 
 
@@ -97,7 +99,7 @@ Nearsoft apprentice is a program focused to everyone who wants to learn about so
 * Add classes to components
 
 ```
-🏁 Have React components stylized 🏁
+🏁 🎉 Have React components stylized 🎉 🏁
 ```
 
 
@@ -131,7 +133,9 @@ Nearsoft apprentice is a program focused to everyone who wants to learn about so
 * Build an endpoint
 * Build project API
 
-#### API ready to be consumed
+```
+🏁 🎉 API ready to be consumed 🎉 🏁
+```
 
 
 ### 14. Redux (05/11)
@@ -141,7 +145,7 @@ Nearsoft apprentice is a program focused to everyone who wants to learn about so
 * Reducer
 
 ```
-🏁 Comunication ready between frontend and backend 🏁
+🏁 🎉 Comunication ready between frontend and backend 🎉 🏁
 ```
 
 
@@ -160,7 +164,7 @@ Nearsoft apprentice is a program focused to everyone who wants to learn about so
 * Continuous Delivery
 
 ```
-🏁 Have running application without any bug 🏁
+🏁 🎉 Have running application without any bug 🎉 🏁
 ```
 
 
