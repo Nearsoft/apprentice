@@ -12,58 +12,55 @@
 ## Description
 Nearsoft apprentice is a program focused to everyone who wants to learn about software development. Sessions will help the assistants to improve their tech and soft skills.
 
-## Content
 ## 1. Objective/How internet works
 * Who we are
-* Overview del Apprentice
-* Casos de exito
+* Apprentice overview
 * Request life cycle
     * Webbrowser
     * HTTP
-    * Cliente/servidor
+    * Client/server
     * DNS/IP
     * TCP/UDP
     * Protocols
-    * Puertos
+    * Ports
 * HTTP verbs
 * HTTP code
 
 ## 2. Terminal
-* Que vergas es?
-* Terminal
+* What's a terminal?
 * Bash
 * Shell
 * CMD
-* Comandos basicos
-* Sistema de archivos
+* Basic commands
+* Files system
 * Scripts
 * Aliases
-* Crear comandos
+* Create commands
 * Softlinks
-* Procesos
+* Processes
 
 ## 3. Git
-#### Moverse dentro de la terminar, lograr hacer PR a repositorio de Apprentice
+#### Move around with terminal, accomplish a Pull Request to Apprentice repository
 * Workflow
-* comandos
+* Commands:
     * status
     * init
     * clone
     * pull
-    * push (historia del force)
+    * push
     * fetch
     * commit
     * branch
     * log
     * stash
-* Ejericio
+* Exercise
     * Fork repo -> commit -> PR
 
 ## 4. Basic concepts
 * http://slides.com/cristiancota/basic-concepts#/8
 
 ## 5. HTML & CSS
-####  Crear elementos con HTML y dar estilos con CSS
+####  Create HTML elements and style them CSS
 * http://slides.com/cristiancota/html-css#/
 
 
@@ -72,16 +69,15 @@ Nearsoft apprentice is a program focused to everyone who wants to learn about so
 
 
 ## 7. React
-* Que es
-* Overview
-* Componente
-* Estado
+* React overview
+* What's a component?
+* State
 * JSX
 * Component life cycle
-* Construir componentes del proyecto
+* Create application components
 
 ## 8. Bootstrap
-#### Crear componentes de la aplicacion estilizados
+#### Application
 * Overview
 * Grids
 * Add classes to components
@@ -92,36 +88,34 @@ Nearsoft apprentice is a program focused to everyone who wants to learn about so
     * Abstraction
     * Encapsulation
     * Hierarchy
-    * Polimorfismo
+    * Polymorphism
 
 ## 10. Ruby
 * http://slides.com/carloscontreiras/deck-6
 
 ## 11. API/Rails
-#### Tener la(s) API(s) lista para consumirla
-* Que es una API
+#### API ready to be consumed
+* What's an API?
     * Endpoints
-* Que es Rails
-* Construir Endpoints
+* What's Rails?
+* Build Endpoints
 * MVC
-* Crear proyecto Rails
-* Servidor Rails
+* Create Rails project
+* Rails Server
 * Controller
 * Gems
 * Routes
-* Modelos
+* Models
 * Active Record
-* Construir API.
+* Build API
 
 ## 12. Redux
-#### Comunicación frontend <> backend
+#### Comunication between frontend and backend
 * Overview
 * Store
 * Action creator
 * Reducer
-*
 
 ## QA
-
 
 If you are interested to join, send us an email to <apprentice@nearsoft.com>.
