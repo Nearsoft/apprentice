@@ -29,6 +29,12 @@ sudo apt-get -y install git-core curl zlib1g-dev build-essential libssl-dev libr
 # For node instead of the therubyracer, unzip, and pdf email
 sudo apt-get -y install nodejs unzip wkhtmltopdf
 
+# Install git
+sudo apt-get -y install git
+
+# Install .zsh (for pretty console)
+sudo apt-get -y install zsh
+
 # Install RUBY_VERSION
 cd /tmp
 wget --quiet http://cache.ruby-lang.org/pub/ruby/2.3/ruby-${RUBY_VERSION}.tar.gz
@@ -44,8 +50,6 @@ sudo apt-get install -y nodejs
 # Disable rdoc
 echo "gem: --no-ri --no-rdoc" > ~/.gemrc
 sudo gem install bundler
-
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # Clean up anything
 sudo apt-get -y autoremove
@@ -63,43 +67,20 @@ echo "update pg_database set datistemplate = TRUE where datname = 'template1';" 
 echo "update pg_database set datallowconn = FALSE where datname = 'template0';" | sudo -u postgres psql template1
 
 # Run bundle install
-cd /apprentice/rails-api
+cd /home/vagrant/apprentice/rails-api
+echo Running bundle install
 bundle install
+echo Creating database
+rake db:create
 
-# Add shortcuts to .bashrc
-cat /apprentice/script/bashrc | sudo tee -a /home/vagrant/.bashrc
+# Install oh-my-zsh
+echo Cloning oh-my-zsh
+git clone git://github.com/robbyrussell/oh-my-zsh.git /home/vagrant/.oh-my-zsh
 
-# Setting xvfb start up
-cat <<EOT > /etc/init.d/xvfb
-  XVFB=/usr/bin/Xvfb
-  XVFBARGS=":10 -fbdir /var/run"
-  PIDFILE=/var/run/xvfb.pid
-  case "\$1" in
-    start)
-      echo -n "Starting virtual X frame buffer: Xvfb"
-      start-stop-daemon --start --quiet --pidfile \$PIDFILE --make-pidfile --background --exec \$XVFB -- \$XVFBARGS
-      echo "."
-      ;;
-    stop)
-      echo -n "Stopping virtual X frame buffer: Xvfb"
-      start-stop-daemon --stop --quiet --pidfile \$PIDFILE
-      echo "."
-      ;;
-    restart)
-      \$0 stop
-      \$0 start
-      ;;
-    *)
-    echo "Usage: /etc/init.d/xvfb {start|stop|restart}"
-    exit 1
-  esac
-  exit 0
-EOT
+echo Copying .zshrc file
+# copy .zshrc config file
+cp /home/vagrant/.oh-my-zsh/templates/zshrc.zsh-template /home/vagrant/.zshrc
+cp /home/vagrant/apprentice/script/zshrc /home/vagrant/.zshrc
 
-sudo chmod +x /etc/init.d/xvfb
-sudo /etc/init.d/xvfb start
-
-sed -ie '$d' /etc/rc.local #Removes a default 'exit 0' at the end of the file
-cat <<EOT >> /etc/rc.local
-  sudo /etc/init.d/xvfb start
-EOT
+# Change the vagrant user's shell to use zsh
+chsh -s /bin/zsh vagrant

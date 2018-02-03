@@ -22,10 +22,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # within the machine from a port on the host machine. In the example below,
   # accessing "localhost:8080" will access port 80 on the guest machine.
 
-  # Ruby on Rails (pointshound)
+  # Ruby on Rails
   config.vm.network :forwarded_port, guest: 3000, host: 3000
 
-  # Forwarded port for karma
+  # React
   config.vm.network :forwarded_port, guest: 8080, host: 8080
 
   # Create a private network, which allows host-only access to the machine
@@ -47,7 +47,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # argument is a set of non-required options.
 
   # Be sure to set atomic saves to false in Sublime so NFS can copy files over correctly
-  config.vm.synced_folder ".",        "/apprentice", type: 'nfs'
+  config.vm.synced_folder ".",        "/home/vagrant/apprentice", type: 'nfs'
   config.vm.synced_folder "./share", "/share",   type: 'nfs'
 
   # Not useful if need to sync from guest VM back to host machine
@@ -74,6 +74,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   end
 
   # Run external install script
-  config.vm.provision "shell", path: "script/vagrant_setup.sh"
+  config.vm.provision :shell, path: "script/vagrant_setup.sh"
   config.vm.provision :shell, path: 'script/draw.sh', run: :always
 end

@@ -1,2 +1,2 @@
 #!/bin/sh
-cat /apprentice/script/ascii-art.txt
+cat /home/vagrant/apprentice/script/ascii-art.txt
