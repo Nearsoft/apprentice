@@ -35,6 +35,10 @@ sudo apt-get -y install git
 # Install .zsh (for pretty console)
 sudo apt-get -y install zsh
 
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+sudo apt-get update && sudo apt-get install yarn
+
 # Install RUBY_VERSION
 cd /tmp
 wget --quiet http://cache.ruby-lang.org/pub/ruby/2.3/ruby-${RUBY_VERSION}.tar.gz
@@ -72,6 +76,11 @@ echo Running bundle install
 bundle install
 echo Creating database
 rake db:create
+
+#Run yarn
+cd /home/vagrant/apprentice/react-app
+echo Running yarn install
+yarn
 
 # Install oh-my-zsh
 echo Cloning oh-my-zsh
