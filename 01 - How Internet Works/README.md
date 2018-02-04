@@ -1,26 +1,3 @@
-Hello! 👋 Welcome to this tutorial were we want to teach you a series of useful topics to understand what a Software Developer does and how you can become into one.
-
-The Nearsoft Apprentice program contains the following topics:
-
-1. How internet works
-2. Terminal
-3. Git
-4. Basic concepts
-5. HTML
-6. CSS
-7. Javascript
-8. React
-9. Bootstrap
-10. OOP
-11. Ruby
-12. API/Rails
-13. Rails II
-14. Redux
-15. Testing
-16. QA
-
-These topics have a sequence, ...
-
 Alguna vez te has preguntado ¿como funciona el internet?. En nuestro día a día estamos acostumbrados a comunicarnos, realizar compras, leer noticias y muchas de nuestras tareas diarias a traves de los diferentes dispositivos que estan conectados al internet. Pues bien, aqui te explicaremos como es esto posible, pero para entender en realidad como funciona en necesario comprender algunos conceptos antes.
 
 Hoy vamos a revisar los siguiente conceptos para tener un idea bien clara:
