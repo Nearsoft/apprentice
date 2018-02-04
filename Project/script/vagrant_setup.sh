@@ -72,7 +72,7 @@ echo "update pg_database set datistemplate = TRUE where datname = 'template1';" 
 echo "update pg_database set datallowconn = FALSE where datname = 'template0';" | sudo -u postgres psql template1
 
 # Move over the secrets file
-cp /vagrant/config/secrets.example.yml /vagrant/config/secrets.yml
+cp /home/vagrant/apprentice/rails-api/config/secrets.example.yml /vagrant/config/secrets.yml
 
 # Run bundle install
 cd /home/vagrant/apprentice/rails-api
