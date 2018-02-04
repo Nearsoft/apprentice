@@ -1,5 +1,9 @@
 # Nearsoft Apprentice
 
+<p align="center">
+<img width="250" align="center" alt="apprentice-logo" src="https://user-images.githubusercontent.com/7410981/35773973-09deb5fa-091f-11e8-84d1-8a87c411d3c0.png">
+</p>
+
 * [Requirements](#requirements)
 * [Description](#description)
 * [Content](#content)
