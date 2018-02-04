@@ -1,5 +1,4 @@
 #!/bin/sh
-
 RUBY_VERSION=2.3.5
 NODE_VERSION=9
 
@@ -18,6 +17,9 @@ wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
 
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+
 sudo apt-get -y update
 
 # Install Postgres-9.6 and extensions for trgm_gin indexes and libaio-dev
@@ -35,10 +37,6 @@ sudo apt-get -y install git
 # Install .zsh (for pretty console)
 sudo apt-get -y install zsh
 
-curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-sudo apt-get update && sudo apt-get install yarn
-
 # Install RUBY_VERSION
 cd /tmp
 wget --quiet http://cache.ruby-lang.org/pub/ruby/2.3/ruby-${RUBY_VERSION}.tar.gz
@@ -55,6 +53,9 @@ sudo apt-get install -y nodejs
 echo "gem: --no-ri --no-rdoc" > ~/.gemrc
 sudo gem install bundler
 
+# Install yarn for node_modules
+sudo apt-get -y install yarn
+
 # Clean up anything
 sudo apt-get -y autoremove
 
@@ -69,6 +70,9 @@ echo "update pg_database set datistemplate = FALSE where datname = 'template1'; 
 echo "create database template1 with ENCODING = 'UTF-8' LC_CTYPE = 'en_US.utf8' LC_COLLATE = 'en_US.utf8' template = template0;" | sudo -u postgres psql template0
 echo "update pg_database set datistemplate = TRUE where datname = 'template1';" | sudo -u postgres psql template0
 echo "update pg_database set datallowconn = FALSE where datname = 'template0';" | sudo -u postgres psql template1
+
+# Move over the secrets file
+cp /vagrant/config/secrets.example.yml /vagrant/config/secrets.yml
 
 # Run bundle install
 cd /home/vagrant/apprentice/rails-api
