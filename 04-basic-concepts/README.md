@@ -74,7 +74,7 @@ he Internet Message Access Protocol (IMAP) is an Internet standard protocol used
 
 Simple Mail Transfer Protocol (SMTP) is an Internet standard for electronic mail (email) transmission.
 
-### FTP & SSH
+## FTP & SSH
 
 The File Transfer Protocol (FTP) is a standard network protocol used for the transfer of computer files between a client and server on a computer network.
 
