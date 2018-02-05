@@ -1,6 +1,46 @@
 # Basic Concepts
 
-> Transcribed slides from [here](http://slides.com/cristiancota/basic-concepts)
+> This document is based of the following presentation by Cristian Cota: [http://slides.com/cristiancota/basic-concepts](http://slides.com/cristiancota/basic-concepts)
+
+
+The world of web development orbits around a galaxy of interconnected concepts, techniques, and technologies which are constantly evolving. This can sometimes hinder the ability of newcomers to learn and practice the craft effectively.
+
+
+To help build a solid foundation for learning web development, we're going to go over some of the most basic concepts. The objective of this chapter is to present a broad picture of the kind of things involved in the development of web applications. In the hopes that the following chapters don't carry too much cognitive weight.
+
+
+Remember that programming is not about memorization. Where in doubt, you can always refer to this chapter to refresh your memory and review the concepts.
+
+## Locating Sites in the Web
+
+> The fundamental concepts from this section are URL, Domain, IP address, and DNS
+
+
+## The Languages of the Digital Hyperspace
+
+> The fundamental concepts from this section are HTTP, HTTPS, POP, IMAP, SMTP, FTP, and SSH
+
+
+## The Ends of a Web Application
+
+> The fundamental concepts from this section are front-end, back-end, and frameworks
+
+
+## Behind the Website
+
+> The fundamental concepts from this section are API, Web Server, Cookies, and Database
+
+
+## The Website in the Eye of the Beholder
+
+> The fundamental concepts from this section are HTML, CSS, JavaScript, AJAX, Responsive Design, Grid System, RGB/Hex, SEO
+
+
+## The Tools of the Craft
+
+> The fundamental concepts from this section are WYSIWYG, GUI, Developer tools, Code, Version Control, Git, Open Source
+
+# Topics
 
 ## URL (Uniform Resource Locator)
 
