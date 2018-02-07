@@ -14,12 +14,30 @@ You may be wondering 'Why would I want to learn how to use the terminal if I alr
 - It's faster to operate on the terminal
 - Some data is not easily accessible through the GUI
 - repetitive task can be automated through it
+- Makes difficult tasks easy
 
 And of course, when programming we will be using the terminal a lot, to install libraries, move across the filesystem, display changes in our files, push code to remote servers, etc.
 
-We are using BASH that is a command language or a command interpreter. BASH is a type of shell, a shell is an interface to the operating system, there are other types of shells, you'll commonly see this two terms together
+We are using BASH that is a command language or a command interpreter. BASH is a type of shell, a shell is an interface to the operating system, it passes commands to SO to carry out, there are other types of shells, you'll commonly see this two terms together
 
 ## Hands on the terminal
 
-When you type the command `ls` the computer executes it, how does a computer interpret the command? computes does not speak high level language like 'echo' 
+To survive on the terminal we need to know the basic commands, and keep learning accordingly to what we want to accomplish
+
+First let's open a terminal if we haven't done already. The first command that we are going to learn about is `ls` to list all the files on the current directory. 
+
+*FOTO DEL LS COMMAND
+
+but wait how do we know in what directory we are? we use the command `pwd` that means *path of working directory*
+there are two types of path, absolute path and relative path
+
+
+
+Basic commands
+Files system
+Scripts
+Aliases
+Create commands
+Softlinks
+Processes
 
