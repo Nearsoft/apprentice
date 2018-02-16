@@ -90,6 +90,10 @@ Nearsoft apprentice is a program focused to everyone who wants to learn about so
 
 
 ### 7. Javascript (Mar 23)
+
+* Javascript Overview
+* 
+
 * Javascripting -> https://www.github.com/sethvincent/javascripting
 
 
