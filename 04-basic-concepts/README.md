@@ -15,6 +15,26 @@ Remember that programming is not about memorization. Where in doubt, you can alw
 
 > The fundamental concepts from this section are URL, Domain, IP address, and DNS
 
+The internet is an ever growing web of machines connected between each other. Similar to how houses are connected in a city, and cities are connected to each other, if you don't know which direction to take, you're going to get lost.
+
+The most usual and high level way to locate a website is by it's **URL**, this term stands for *Uniform Resource Locator* and it's an encoded string which let's us identify a location in a computer network and the means of retrieving a resource on that machine.
+Let's take a look at the programming subreddit URL to identify its basic parts: [https://www.reddit.com/r/programming/](https://www.reddit.com/r/programming/).
+
+First we have the *scheme* `https` which denotes the protocol used for communication. Then we have the *hostname* `www.reddit.com` which is basically the domain to which the URL is referring to. And lastly we have a *path* to the `/r/programming/` resource, which identifies that of all the content in that website, we want to get the programming subreddit feed.
+
+As it's very common with technical definitions, there's more details and complexity in the precise [definition of URL](https://tools.ietf.org/html/rfc3986), but the simplified definition from above can help us untangle other concepts, in particular regarding the hostname.
+
+It turns out that `reddit.com` is not the direct location of the machine where the site is hosted. Similar to how house addresses are not the latitude and longitude coordinates, but a more easily to remember combination of names. Websites locations are directly identified by an *IP address*.
+
+The structure of IP addresses differs from version to version, the most widely use version is IPv4 which reads as a four numbers from 0 to 255 separated by dots like:
+
+- 127.0.0.1 (localhost)
+- 208.80.153.224 (Wikipedia)
+- 172.217.2.238 (Google)
+
+Go ahead and enter [http://172.217.2.238](http://172.217.2.238) into your browser's address bar. You'll see google popping up. But how do we know `www.google.com` refers to this address?
+
+Well, the Google domain is registered in a **DNS** (which stands for *Domain Name System*). These DNS are like tables that translate memorizable names to the numerical IP addresses needed for locating a machine.
 
 ## The Languages of the Digital Hyperspace
 
