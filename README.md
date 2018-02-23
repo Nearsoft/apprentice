@@ -7,22 +7,6 @@
 * [Requirements](#requirements)
 * [Description](#description)
 * [Content](#content)
-    * [How Internet Works](#1. Objective/How internet works)
-    * [Terminal](#2. Terminal)
-    * [Git](#3. Git)
-    * [Basic concepts](#4. Basic concepts)
-    * [HTML](#5. HTML)
-    * [CSS](#6. CSS)
-    * [Javascript](#7. Javascript)
-    * [React](#8. React)
-    * [Bootstrap](#9. Bootstrap)
-    * [OOP](#10. OOP)
-    * [Ruby](#11. Ruby)
-    * [API/Rails](#12. API/Rails)
-    * [Rails II](#13. Rails II)
-    * [Redux](#14. Redux)
-    * [Testing](#15. Testing)
-    * [QA](#16. QA)
 
 ## Requirements
 
