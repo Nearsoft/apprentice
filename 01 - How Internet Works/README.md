@@ -1,78 +1,84 @@
-Alguna vez te has preguntado ¿como funciona el internet?. En nuestro día a día estamos acostumbrados a comunicarnos, realizar compras, leer noticias y muchas de nuestras tareas diarias a traves de los diferentes dispositivos que estan conectados al internet. Pues bien, aqui te explicaremos como es esto posible, pero para entender en realidad como funciona en necesario comprender algunos conceptos antes.
+## How Internet Works
 
-Hoy vamos a revisar los siguiente conceptos para tener un idea bien clara:
+Have you ever wonder how the internet works? In our daily tasks we are used to communicate, shopping, read news and do many of our daily activities are through the different devices connected to the internet. Well, here we are going to help you understand how this is possible, but in order to achieve this we need is necessary to understand some concepts before.
 
-## Agenda
+In this module, we are going through the following concepts:
 
-* Protocolo
+* Protocol
+* Client - server
 * HTTP
     - Verbs
     - Status codes
 * Internet
-* Cliente - servidor
 
 ## Protocolo
 
-Se puede definir un protocolo como un conjunto de reglas que rigen un acto.
+First, you need to know what's a protocol. This is can be defined as: a set of rules that dictate an act.
 
-Puedes pensar en él como un algoritmo estándar  Por ejemplo, para inscribirte en una escuela hay una serie de pasos claves estándar que debes seguir para llevar acabo esto.  
+You can think of it as a standard algorithm. For example, to enroll in the school there are a number of standard steps you must follow to accomplish this out.
 
 ```
 e.g.  
 
-1. Llevas los documentos necesarios a cierta oficina
-2. Te dan una ficha para pagar con la fecha del examen
-3. Pagas en el banco
-4. Haces el examen
-5. Se califican a los candidatos
-6. Se publica la lista de los candidatos
-7. Los candidatos pagan la inscripción
-8. Se hace corrimiento de lista de ser necesario
-9. Segunda ronda para los candidatos
-10. Los candidatos de corrimiento pagan
-11. Empiezan las clases. 
+1. You take the necessary papers to the school.
+2. School give you a bill to pay with the date of the exam.
+3. You pay the bill in the bank.
+4. You do the exam.
+5. Candidates are qualified and results are published.
+7. Candidates who passed pay the inscription.
+8. List shift if necessary.
+9. Second round for candidates.
+10. New accepted candidates pay the bill.
+11. Classes begin.
 ```
 
-En cuanto a comunicaciones corresponde, hay una serie de protocolos que hay que seguir para conectar mediante bluetooth, wifi, infrarrojo, etc.  Imagínate que cada tipo de dispositivo se comunicara de su propia forma.  Terminaríamos con multiples convertidores de señales de dispositivo a otro, lo cual haría la comunicación entre ellas significativamente lenta, incluyendo comunicación de alta demanda como streaming, gaming, descargas, etc.   Al tener un estándar todas los dispositivos no se tienen que preocupar por como conectarse a otro dispositivo sino ajustarse a funcionar con los protocolos ya establecidos.
+Regarding communications, there are a series of protocols that must be followed to connect devices using different technologies as bluetooth, wifi, infrared, etc. Think for a moment that each device use its own way to communicate. We will have millions of signal converters from one device to other, which means the communication will be pretty slow, including high demand as streaming, gaming, downloads, etc. Having this standards defined and used in all devices, you don't have to worry about how to connect to another device, but only to adjust to work with the protocols already established.
 
 ## Cliente - Servidor
 
-La arquitectura cliente-servidor es una red de comunicaciones donde los clientes hacen *peticiones* a un servidor, el cual *responde* con lo solicitado.
+The client-server architecture is a communication network where clients make *Requests* to a server, who is in charge to gave a *Response*.
 
-Vamos a definir dos conceptos muy importantes: request and response.
+Let's define a couple of concepts very important: request and response.
 
-Un request es una peticion hecha por el cliente, por ejemplo: al momento de querer acceder a una página web. Al escribir la URL en el navegador, este hace una peticion al servidor y una vez que el servidor la recibe sabe como interpretarla.
+A request is basically the way that the client demand for what he needs, i.e. when you try to open a website. At the moment you type the url in the web browser, this will make a request to the server asking for the website you want to visit.
 
-El response es la respuesta que se da por parte del servidor, la cual llega de regreso al cliente. Como la peticion solamente fue una pagina web, el servidor regresa el HTML correspondiente a URL solicitada, un poco más delante veremos esto a detalle.
+Now, the response is the way that the server will answer for what the client have asked. Continuing with the previous example, the server will recognize that client is asking for the website, the server knows that needs to answer with the appropriate HTML for the url given. A bit forward we will explain this in detail.
 
-Cualquier computadora puede funcionar como servidor, de hecho durante este curso haremos que la tuya se convierta en uno, el cual recibira esas peticiones y respondera a ellas.
+Let's think that the client is who needs something and asks for it and the server will provide with the resources needed.
 
-## HTTP (Hypertext Transfer Protocol)
+Any computer can work as server, in fact during this course you will make yours become one! which will receive the request we mention and will respond to them.
 
-El protocolo de transferencia de hiper texto es un protocolo de aplicación para la transferencia de información entre sistemas. HTTP es la base para comunicación de datos de internet (World wide web).
-El hiper texto es mostrado en un monitor o cualquier otro dispositivo electrónico con diferente nivel de detalle.
+## HTTP
 
-En este protocolo se toma el esquema de cliente/servidor, en el que el cliente le hace algún tipo de petición al servidor y el servidor contesta según el tipo de petición.
+First let's define what is Hyper Text.
 
-Por ejemplo cuando entras a la página de https://google.com tu estás haciendo una petición/request al servidor de google usando el método GET (El cual veremos más adelante). 
+Hyper text is simple information that takes advantage of the computers to display data in a no sequential order. This means, that data is linked to more data, not located in the same place. An example of hypertext is a website.
 
-Normalmente HTTP tiene 3 características dentro del llamada
+The Hyper Text Transfer Protocol is an application protocol used for the hypertext transfer between systems. HTTP is the basis for internet data communication (World wide web).
 
-1. Url (A donde nos vamos a comunicar)
-2. Método de comunicación (GET, POST, etc.)
-3. Información extra de ser necesaria
+The client-server architecture is used by HTTP. Usually HTTP has three main characteristics inside the call (the request to the server).
 
-Dentro de la 3era característica, cuando el servidor contesta la respuesta normalmente con tiene 2 cosas, el HEADER(Información extra como fecha, tipo de servidor y el tipo de dato que esta regresando) y el BODY(La información que va a ser procesada por el cliente como HTML, JSON, XML)
+1. The Url
+2. A communication method
+3. Extra data in case needed
 
-Request del cliente  
+When the server respond, the protocol dictate a needed field and other optional.
+
+1. Header (Need)
+2. Body (Optional)
+
+First part, the header brings information such as the response code, date, content-type and other data you can check here (https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers#Authentication). And the second part, the body contains data to be received by the client, such as HTML, Json, XML, etc. Sometimes the response doesn't have a body, with the header is enough.
+
+Let's take again the example of navigate to a website to makes sense with everything you've learned so far. When you type `https://www.example.com` you are making a request to the server via web browser (client) using the GET Method (don't worry about this GET Method right now, we have a special section to explain you this).
+
+This is the client request:
+
 ```
 GET /index.html HTTP/1.1
 Host: www.example.com
-
 ```
 
-Response del servidor
-
+And this will be the request of the server:
 
 ```
 HTTP/1.1 200 OK
@@ -96,33 +102,15 @@ Connection: close
 </html>
 ```
 
-Cabe aclarar que HTTP incluye pero no se limita solo a navegadores de internet. Si bien habrá ocasiones en las que el servidor conteste con código HTML para renderear una página web, en el desarrollo de software, el servidor puede contestar con información que le ayudará a procesar información a ocultas del usuario.
+Do you see the blank line right before the html tag? That's the division between header and body. And this is basically how a request and a response works in real life.
 
-Por ejemplo cuando tu entras a facebook, haces un método GET para renderear el HTML pero dentro del procesamiento facebook hace varias llamadas extra al servidor para ver detalles como para ver si el usuario está logeado, traer la información de tu cuenta, tus amigos incluyendo foto si están disponibles, tu timeline, etc.
-O bien cuando te registras en una página el navegador hace una petición POST al servidor con los datos del formulario.
+Want to see in action? Open your terminal and type `curl -i https://www.example.com/`.
 
-## HTTP Status Code
+It's nice to mention that HTTP include, but isn't limited to web browsers. Now, you know that sometimes a request is asking for html code, but sometimes server will process information hidden to the user.
 
-100
-Normalmente estos códigos son regresados cuando el cliente envia los encabezados y contesta con 1xx para solicitar el cuerpo al cliente.
+What does that means? Look, let's check a common example. When you type `https://www.facebook.com` on your browser, you are requesting for the Facebook website and in case you are already logged in, then you are expected to look your friend's posts. This happens thanks that in the server, some extra requests are done and you don't notice, such as checking if the user is logged, bring the posts, photos, etc.
 
-200
-Los códigos 200 significan que la petición fue exitosa.
-200 OK
-201 Created: Cuando la petición fue exitosa y se creo un nuevo recurso (Como un usuario)
-
-300
-Estos códigos significa que se está haciendo una redirección, si entran a google.com les contestará con 300 guiándolos a una dirección especializada para la búsqueda.
-301 Moved Permanently: cuando la url que solicitaste fue movida a otra url y se usa para redireccionarte a la actual
-
-400
-Estos errores son cuando los problemas son del lado del cliente, el famoso 404 cuando un recurso no ha sido encontrado.
-401 Unauthorized: Cuando solicitas algo a donde no tienes autorizado hacer una petición.
-
-500
-Estos errores son cuando los problemas son del lado del servidor, cuando un servidor no lidia con una solicitud bien puede lanzar alguno de estos, por ejemplo 503 es cuando el servidor no puede contestar debido a no disponibilidad como cuando hay mucho tráfico dentro de la página.
-500 Internal Server Error cuando la aplicación del servidor fallo repentinamente
-503 Service Unavailable: Es cuando el navegador está congestionado o se encuentra en mantenimiento.
+When you don't have an account and you fill the form for register your data, this create a POST request to the server. This request are a bit different than the GET method and we are going to explain below.
 
 ## HTTP Verbs/Methods
 
@@ -154,7 +142,31 @@ El verbo PUT es utilizado para actualizar datos que ya existen, parecido al POST
 
 Finalmente hablemos del metodo DELETE, el cual es muy fácil de entender. Al realizar una petición con este metodo, pedimos al servidor que elimine el recurso que le estamos pidiendo. En su body, somalente se include el ID de lo que queremos elimiar.
 
-## Internet
+## HTTP Status Code
+
+* ### 1xx Informational responses
+
+An informational response indicates that the request was received and understood. It alerts the client to wait for a final response.
+
+Usually this codes are used when server has received the request headers and the client should proceed to send the request body.
+
+* 2xx Success
+
+Indicates the action requested by the client was received, understood and accepted.
+
+* 300 Redirection
+
+This class of status code indicates that further action needs to be taken by the user agent in order to fulfill the request. Basically are redirection to a different URL.
+
+* 4xx Client errors
+
+These errors happens when the problem are in the client side, like the famous 404, this means that the resource has not been found.
+
+* 5xx Server errors
+
+The last code errors occur when the problem is from the server side. When you have bad code on your server and something gets broken, then it will return a 5xx error. Other examples are when server is too busy or it's on maintenance.
+
+## Interet
 
 El internet es solo un conjunto de computadoras conectadas entre sí, todo lo que ves en internet está guardado en algún disco duro en alguna persona al igual que tus películas, música y fotos lo están en el tuyo.
 
@@ -172,4 +184,4 @@ Obviamente como no podemos conectar una computadora con todas en el mundo debemo
 
 Es como si enviáramos una carta cuando nos comunicamos con otra computadora.  Esta debe tener mensaje, destinatario y remitente, sello, estampilla , aunque no son los mismos que la carta se asemejan sus características. También debe estar en un lenguaje estándar como ya vimos, se usa el protocolo HTTP.
 
-Las páginas web deben estar en un servidor esperando cualquier solicitud de cualquier parte del mundo. A veces según la forma de tu solicitud será la respuesta del servidor, como cuando entras a Netflix y te ofrece un cierto tipo de catalogo pero si estás en estados unidos te proporcionaría otro catalogo
+Las páginas web deben estar en un servidor esperando cualquier solicitud de cualquier parte del mundo. A veces según la forma de tu solicitud será la respuesta del servidor, como cuando entras a Netflix y te ofrece un cierto tipo de catalogo pero si estás en estados unidos te proporcionaría otro catalogo.
