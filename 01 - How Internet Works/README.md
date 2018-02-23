@@ -39,7 +39,7 @@ Regarding communications, there are a series of protocols that must be followed 
 The client-server architecture is a communication network where clients make *Requests* to a server, who is in charge to gave a *Response*.
 
 <p align="center">
-![Client-Server](https://user-images.githubusercontent.com/8913918/36585832-ac331950-183c-11e8-89f4-63e65065a699.png)
+<img align="center" alt="client-server" src="https://user-images.githubusercontent.com/8913918/36585832-ac331950-183c-11e8-89f4-63e65065a699.png">
 </p>
 
 Let's define a couple of concepts very important: request and response.
