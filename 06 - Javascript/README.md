@@ -294,9 +294,9 @@ Relational operators attempt to evaluate operands into numbers, and do a numeric
 
 Logical operators are typically used with Boolean values. When they are, they return a Boolean value.
 
-The three logical operators are: `&amp;&amp;` (logical AND), `||` (logical OR) and `!` (logical NOT).
+The three logical operators are: `&&` (logical AND), `||` (logical OR) and `!` (logical NOT).
 
-    > true &amp;&amp; false;
+    > true && false;
     false
     > true || false;
     true
@@ -305,24 +305,24 @@ The three logical operators are: `&amp;&amp;` (logical AND), `||` (logical OR) a
 
 Since we previously saw that relational operators return boolean values, we can use them together with logical operators!
 
-    > (5 > 4) &amp;&amp; (10 !== 9);
+    > (5 > 4) && (10 !== 9);
     true
     > var name = 'Juan';
     > var age = 17;
     > name === 'John' || age > 18;
     false
     
-The `&amp;&amp;` and `||` operators actually return the value of one of the specified operands, so if these operators are used with non-Boolean values, they may return a non-Boolean value.
+The `&&` and `||` operators actually return the value of one of the specified operands, so if these operators are used with non-Boolean values, they may return a non-Boolean value.
     
     > 'hello!' || false
     'hello!'
-    > 0 &amp;&amp; true
+    > 0 && true
     0
 
 These values are evaluated for *falsy* or *truthy* values on boolean operations. 
 So what exactly are these *falsy* and *truthy* values?
 
-#### Truthy &amp; Falsy
+#### Truthy & Falsy
 
 A "truthy" value is a value that translates to `true` when evaluated in a boolean context.
 On the opposite end, a "falsy" value evaluates to `false` in a boolean context.
