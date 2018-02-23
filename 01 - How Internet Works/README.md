@@ -11,7 +11,7 @@ In this module, we are going through the following concepts:
     - Status codes
 * Internet
 
-## Protocolo
+## Protocol
 
 First, you need to know what's a protocol. This is can be defined as: a set of rules that dictate an act.
 
@@ -34,9 +34,13 @@ e.g.  
 
 Regarding communications, there are a series of protocols that must be followed to connect devices using different technologies as bluetooth, wifi, infrared, etc. Think for a moment that each device use its own way to communicate. We will have millions of signal converters from one device to other, which means the communication will be pretty slow, including high demand as streaming, gaming, downloads, etc. Having this standards defined and used in all devices, you don't have to worry about how to connect to another device, but only to adjust to work with the protocols already established.
 
-## Cliente - Servidor
+## Client - Server
 
 The client-server architecture is a communication network where clients make *Requests* to a server, who is in charge to gave a *Response*.
+
+<p align="center">
+![Client-Server](https://user-images.githubusercontent.com/8913918/36585832-ac331950-183c-11e8-89f4-63e65065a699.png)
+</p>
 
 Let's define a couple of concepts very important: request and response.
 
