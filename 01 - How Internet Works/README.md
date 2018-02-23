@@ -116,9 +116,9 @@ What does that means? Look, let's check a common example. When you type `https:/
 
 When you don't have an account and you fill the form for register your data, this create a POST request to the server. This request are a bit different than the GET method and we are going to explain below.
 
-## HTTP Verbs/Methods
 
-Ya hemos hablado sobre hacer peticiones con HTTP, pero ¿son todas estas peticiones iguales? Al hacer un request, la petición siempre va acompañada por un verbo que nos hace referencia a lo que la petición necesita. Los verbos se listan a continuacion:
+## HTTP Verbs/Methods
+We have already talked about requests done by HTTP, but, are all the request the same? When you do a request, this always can be identified with a verb, that explains us what is needed in the request. The following are the all the verbs in HTTP:
 
 GET
 HEAD
@@ -130,21 +130,21 @@ OPTIONS
 TRACE
 PATCH
 
-De todos ellos, vamos a enfocarnos solamente en los que más utilizamos, que son: GET, POST, PUT y DELETE.
+From all of them, we're going to focus mainly in the most-used ones, which are: GET, POST, PUT and DELETE.
 
 GET method is used to read or retrieve a resource from the server. Usually when request is resolved properly, this returns a 200 response (OK). Otherwise, will return a 404 response (NOT FOUND) or 400 (BAD REQUEST).
 
-Este es el metodo más utilizado. Al momento de que uno escribe la URL dentro de la barra de direcciones del navegador, este realiza una peticion GET, regresando una respuesta con el HTML de la pagina. Otro ejemplo es en las aplicaciones moviles. Al momento de abrir Instagram, por ejemplo, la aplicación hace una petición al servidor para traer las fotos de la gente a la que sigues. El servidor responde con un JSON con las ultimas actualizaciones, incluyendo el nombre de usuario de quien publico la foto, fecha de subida, URL de la foto, etc. No entraremos en detalle aún sobre que es un JSON, solamente es necesario entender que el servidor nos regresa una lista con todos los elementos necesarios para ser mostrados en la vista principal de la aplicación.
+This one is the most used accross the HTTP methods. When you type a URL in the location bar in the browser and press ENTER, you're doing a GET request, and if successful the answer will be HTML code from a webpage. Another example are mobile applications. When you open Instagram, for example, the application makes a request to the server to bring the photos from the people you follow. The server respondes with a JSON(JavaScript Object Notation) file with the latest news on your feed, including usernames, dates, comments, image's URL, etc. We will not stop and learn about JSON files right now, they will be more important later on :), right now we just need to understand that is a file the server responds with all the necessary elements to be handle by the application and be shown in the screen.
 
--- Cuando se hace una llamada GET, no se harán modificaciones.
+-- When you're doing a GET, by standard we shouldn't be doing modifications.
 
-Hablemos ahora del metodo POST. Este metodo es usado para crear nuevos recursos, lo que quiere decir que al momento de hacer una petición por medio de este metodo es porque tenemos la intencion de crear algo nuevo dentro de nuestra aplicación o la aplicación que estemos usando en el momento, ya se a usuario, una publicacion, un tweet, etc.
+Now let's talk about the POST method. This method is used to create new resources, this means that if we're making a request using this method must because we have the intention of creating something new inside our application or the application we're using at the moment, it could be a user, a comment, tweet, etc.
 
-Cuando se hace una petición de este tipo, generalemente va acompañada de un body, que lleva la informacion necesaria para generar el nuevo recurso. Por ejemplo, al publicar un nuevo tweet, este llevará en su body el mensaje que queremos compartir, acompañados también de mi ID de usuario, para crear este nuevo tweet y saber quien lo acaba publicar y aparezca en la página de inicio de mis seguidores.
+When you make a request of this type, it comes with a 'body', that has all the information needed to generate a new resource. For example, sending a new tweet, this will carry within the body the message we want to share, an ID of the user to create this new tweet and know who is the user sending it, so it can appear in the feed of my followers.
 
-El verbo PUT es utilizado para actualizar datos que ya existen, parecido al POST, pero en vez de crear recursos nuevos, es los modifica. Al igual que el POST, este metodo tambien llevará un body donde lleva la nueva información que queremos colocar en el server.
+The PUT verb is used to update the data that is already stored, is similir to POST, but instead of creating new resources, they're modified. Like the POST, it will contain a body where the new information we want to send to the server.
 
-Finalmente hablemos del metodo DELETE, el cual es muy fácil de entender. Al realizar una petición con este metodo, pedimos al servidor que elimine el recurso que le estamos pidiendo. En su body, somalente se include el ID de lo que queremos elimiar.
+Finally let's talk about DELETE method, which is pretty easy  to understand. Doing a request with this method, we ask the server to delete the resource we are asking. In the body, we only include the ID we want to delete.
 
 ## HTTP Status Code
 
@@ -171,21 +171,20 @@ These errors happens when the problem are in the client side, like the famous 40
 The last code errors occur when the problem is from the server side. When you have bad code on your server and something gets broken, then it will return a 5xx error. Other examples are when server is too busy or it's on maintenance.
 
 ## Interet
+The internet is just a massive red of computers connected with each other, everything you see in the internet is saved in a some random person's hard drive, as well as the movies, music and photos that you have in your computer.
 
-El internet es solo un conjunto de computadoras conectadas entre sí, todo lo que ves en internet está guardado en algún disco duro en alguna persona al igual que tus películas, música y fotos lo están en el tuyo.
+The web pages work parsing HTML code (HyperText Markup Language) that is saved in a file like any other file in any other hard drive.  Usually this files are stored in servers.
 
-Las paginas web trabajan interpretando código HTML (HyperText Markup Language) que normalmente está contenido en un archivo como cualquier otro en un disco duro. Normalmente estos archivos son guardados en servidores.
+The internet looks like this!
 
-Así luce el internet!
+![alt text](https://upload.wikimedia.org/wikipedia/commons/d/d2/Internet_map_1024.jpg)
 
-￼FOTO PERRONA
+This is a graphic representation of all the computers that can access to internet connected with each other.
 
-Esta es la representación gráfica de todas las computadoras con acceso a internet conectadas entre sí.
+This computers at the end of the day are connected by cables, a lot a looot of cables (Even underwater cables)
 
-Estas computadoras están conectadas por cables y muuchos cables (hasta cables submarinos).
+Obviously, we can't connect a single computer to all the computers in the world, we have a way to communicate with each other. The way to connect with each other is sending the messages accross a lot of computers until it reaches the destination. Imagine we want to travel to Mexico City, to reach this city there's no direct way to reach we must come through a lot of cities first to reach it.
 
-Obviamente como no podemos conectar una computadora con todas en el mundo debemos tener una manera de hacer llegar una con otra. La forma de conectarla es teniendo que pasar una solicitud a través de muchas para llegar a otra. Es como si quisieras llegar a Ciudad de México, para llegar no hay una ruta directa sino que debemos tomar una ruta a otras ciudades
+Imagine we're sending a letter to another computer. This letter must contain a message, destination, sender, stamp and seals, although they're not exactly the same they kind of resemble each other. Also this must be a standard language. in this case we talk about the HTTP. protocol.
 
-Es como si enviáramos una carta cuando nos comunicamos con otra computadora.  Esta debe tener mensaje, destinatario y remitente, sello, estampilla , aunque no son los mismos que la carta se asemejan sus características. También debe estar en un lenguaje estándar como ya vimos, se usa el protocolo HTTP.
-
-Las páginas web deben estar en un servidor esperando cualquier solicitud de cualquier parte del mundo. A veces según la forma de tu solicitud será la respuesta del servidor, como cuando entras a Netflix y te ofrece un cierto tipo de catalogo pero si estás en estados unidos te proporcionaría otro catalogo.
+The web pages must be in a server standing by, waiting for a request for any part of the world. Sometimes the form of the request will be answered with a response from the server, When you visit pages like Netflix it gives you a certain catalog depending on which country you're visiting, If you visit Netflix from Europe you will have a different catalog.
