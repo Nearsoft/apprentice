@@ -181,7 +181,8 @@ The internet looks like this!
 
 This is a graphic representation of all the computers that can access to internet connected with each other.
 
-This computers at the end of the day are connected by cables, a lot a looot of cables (Even underwater cables)
+This computers at the end of the day are connected by cables, a lot a looot of cables (Even undersea cables)
+![alt text](https://i.redd.it/eo6248sth0pz.png)
 
 Obviously, we can't connect a single computer to all the computers in the world, we have a way to communicate with each other. The way to connect with each other is sending the messages accross a lot of computers until it reaches the destination. Imagine we want to travel to Mexico City, to reach this city there's no direct way to reach we must come through a lot of cities first to reach it.
 
