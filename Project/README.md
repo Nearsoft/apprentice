@@ -1,6 +1,7 @@
+# Apprentice Project
 
 ## What is Vagrant?
-Vagrant is a tool for building and managing virtual machine environments in a single workflow.It will install you everything you need for starting developing right away without needing to manually install all the dev dependencies one by one. For the Apprentice app we bundled for you ruby, rails, node, postgresql & several other dependencies that the project requires to run.
+Vagrant is a tool for building and managing virtual machine environments in a single workflow. It helps creates a development environment with everything that you need for starting coding right away without needing to manually install all the dependencies one by one. For the Apprentice app we have bundled for you ruby, rails, node, postgresql & several other dependencies that this project requires to run.
 
 Vagrant lowers development environment setup time, increases production parity, and makes the "works on my machine" excuse a relic of the past.
 
@@ -43,7 +44,7 @@ Vagrant lowers development environment setup time, increases production parity, 
 
 ### Useful aliases
 
-To save some time you can use the following command aliases
+To save some time you can use the following command aliases once you're inside the virtual machine:
 
 Command | Action
 ------------ | -------------
