@@ -134,8 +134,7 @@ From all of them, we're going to focus mainly in the most-used ones, which are: 
 
 GET method is used to read or retrieve a resource from the server. Usually when request is resolved properly, this returns a 200 response (OK). Otherwise, will return a 404 response (NOT FOUND) or 400 (BAD REQUEST).
 
-This one is the most used across the HTTP methods. When you type a URL in the location bar in the browser and press ENTER, you're doing a GET request, _and if successful the  will be HTML code from a webpage._
- Another example are mobile applications. When you open Instagram, for example, the application makes a request to the server to bring photos from the people you follow. The server responds with a JSON (JavaScript Object Notation) file with the latest news on your feed, including usernames, dates, comments, image's URL, etc. We won't be learning about JSON files right now, they will become more important later on 😉, right now we just need to understand that it is a file the server responds with all the necessary elements to be handled by the application and be shown in the screen.
+This one is the most used across the HTTP methods. When you type a URL in the location bar in the browser and press ENTER, you're doing a GET request, and if successful HTML code will be rendered on your web browser. Another example are mobile applications. When you open Instagram, for example, the application makes a request to the server to bring photos from the people you follow. The server responds with a JSON (JavaScript Object Notation) file with the latest news on your feed, including usernames, dates, comments, image's URL, etc. We won't be learning about JSON files right now, they will become more important later on 😉, right now we just need to understand that it is a file the server responds with all the necessary elements to be handled by the application and be shown in the screen.
 
 **Note ⚠️**:  When doing a `GET`, by standard you shouldn't be doing modifications.
 
@@ -143,9 +142,9 @@ Now let's talk about the `POST` method. This method is used to create new resour
 
 When you make a request of this type, it comes with a 'body', that has all the information needed to generate a new resource. For example, sending a new tweet, this will carry within the body the message we want to share, an ID of the user to create this new tweet and know who is the user sending it, so it can appear in the feed of my followers.
 
-The PUT verb is used to update the data that is already stored, is similar to POST, but instead of creating new resources, they're modified. Like the POST, it will contain a body where the new information we want to send to the server.
+The `PUT` verb is used to update the data that is already stored, is similar to POST, but instead of creating new resources, they're modified. Like the POST, it will contain a body where the new information we want to send to the server.
 
-Finally let's talk about DELETE method, which is pretty easy  to understand. Doing a request with this method, we ask the server to delete the resource we are asking. In the body, we only include the ID we want to delete.
+Finally let's talk about `DELETE` method, which is pretty easy  to understand. Doing a request with this method, we ask the server to delete the resource we are asking. In the body, we only include the ID we want to delete.
 
 ## HTTP Status Codes
 
