@@ -73,7 +73,7 @@ danielvilla@Daniels-MacBook-Air:~$ cd docker
 danielvilla@Daniels-MacBook-Air:~/docker$ 
 ```
 
-By the way, the **~** before the **$** sign indicates the home directory, all users have their own home directory
+By the way, the **~** before the **$** sign indicates the home directory, all users have their own home directory, and is VERY IMPORTANT that you know that **/** indicates the root directory, off all the filesystem
 
 but now that we are on the docker directory how do we move back to the home directory, there are two ways:
 
@@ -288,21 +288,130 @@ vdir (1)             - list directory contents
 Yes, the command **apropos** searches for a command that fits your description
 
 #### Creating files and directories
-mkdir 
-mkdir -p
-touch
-vi
->
+
+We have been exploring how to move across directories, list files and see the metadata of those, but now, let's go one step ahead and create a directory with the **mkdir** command
+
+```
+danielvilla@Daniels-MacBook-Air:~$ mkdir mydirectory
+danielvilla@Daniels-MacBook-Air:~$ 
+```
+Normally when a command is successful it won't print anything, if we look now the mydirectory directory is created and ready to have files
+
+It's very common that we want to create directories contained inside directories (that's how everything works) but mkdir alone won't let us do that
+
+```
+danielvilla@Daniels-MacBook-Air:~$ mkdir great_ideas/best_ideas/dontlookhere
+mkdir: great_ideas/best_deas: No such file or directory
+```
+We need to add the **p** flag to correct that
+
+```
+danielvilla@Daniels-MacBook-Air:~$ mkdir -p great_ideas/best_ideas/dontlookhere
+danielvilla@Daniels-MacBook-Air:~$ 
+```
+That will save us a lot of time of doing `mkdir great_ideas` then `cd great_ideas` then `mkdir best_ideas`... well you get the point
+
+NOW! we have our directory ready to have files and great ideas, but how do we create a simple file? 
+
+There are plenty of ways to create files on unix system but the common ones are
+
+```
+danielvilla@Daniels-MacBook-Air:~$ touch idea1.txt
+```
+**touch** is an awesome command, you don't have to worry if the file exists and if it is going to get overwritten, if there's a idea1.txt file only the created date wil be affected to the current date, the data will stay intact
+
+
+**vim** is a text editor that will let you create files, the comprehension and usage of vim is WAY beyond this course, but I want to let you know people who know how to use vim are VERY efficient in matters of text insertion and deletion, vim alows you to do very delicated and elegant modifications to a file. For now lets just create a file
+
+```
+danielvilla@Daniels-MacBook-Air:~$ vim idea2.txt
+```
+vim will create idea2.txt, to enter in insert mode text press **i** 
+
+To exit press **esc** then **:** and then **q** follow by **enter** key
+
+```
+danielvilla@Daniels-MacBook-Air:~$ > idea3.txt
+```
+redirecting the output of nothing, it will create an empty text file
+
+To add text to a file you can simple vim into it and add the text in insert mode, or you can append text, echoing the text and adding it to the file
+
+```
+danielvilla@Daniels-MacBook-Air:~$ echo "create a script to automate installations" >> idea1.txt
+```
+to display what a file has let's use the cat command
+```
+danielvilla@Daniels-MacBook-Air:~$ cat idea1.txt 
+create a script to automate installations
+```
+we can also use the **less** and **more** commands, try it!
 
 #### Removing files and directories 
-rm
-rm -rf
-rm -rfi
-rmdir (only if empty)
+
+Now that we have created a file and a directory let's learn how to remove it (we will be doing that a lot)
+```
+danielvilla@Daniels-MacBook-Air:~$ rm bad_dea.txt
+```
+as simple as that, but BE AWARE, there's trash can on the terminal, **removing something IS FOREVER**
+
+rm by itself won't allow us to remove a directory, a directory is a special kind of file that associates file names with it's metadata, we need to use two flags for it
+
+```
+danielvilla@Daniels-MacBook-Air:~$ rm -rf ideas 
+```
+now if we want to be careful when deleting a delicate directory let's use the interactive mode
+```
+danielvilla@Daniels-MacBook-Air:~$ rm -rfi ideas/ 
+examine files in directory ideas/? yes
+remove ideas/? yes
+```
+if the directory is empty we can remove it with **rmdir** without using any flag
+```
+danielvilla@Daniels-MacBook-Air:~$ rmdir ideas
+```
+
 
 #### Other useful commands 
-ifconfig
+To find a file on your filesystem use the command find
+```
+vagrant@vagrant-ubuntu-trusty-64:~/apprentice$ find . -name README.md
+./react-app/README.md
+./README.md
+./rails-api/README.md
+```
+where **.** indicates we do the search from the current directory, **-name** that we do it by the name file and README.md is the name of the file we are looking for
+
+To search for a specific text contained on a file lets use grep in recursive mode
+grep
+```
+vagrant@vagrant-ubuntu-trusty-64:~/apprentice$ grep -R database
+rails-api/bin/setup:  # unless File.exist?('config/database.yml')
+rails-api/bin/setup:  #   cp 'config/database.yml.sample', 'config/database.yml'
+```
+notice the **-R** flag and how the searched for the text database on the current directory 
+
+Finaly to see all the commands that we have been typing let's use the **history** command
+
+```
+.
+.
+110  find . -name README.md
+111  ls
+112  grep -R database
+113  grep -R database.yml
+114  history
+vagrant@vagrant-ubuntu-trusty-64:~/apprentice$ 
+```
+
 
 #### Excercises
+1. Create a file containing your username and hostname
+2. Create a tree directory ~/movies/goodmovies/top5movies
+3. Create a file on top5movies and add your 5 favorite movies
+4. Create a directory ~/to_delete add 3 files and remove it interactively
+5. Search for the file *term.log* and display it absolute path
+6. Search for all the files on your home directory that contain the word password
+
 
 
