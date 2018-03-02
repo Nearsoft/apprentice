@@ -7,9 +7,9 @@ Vagrant lowers development environment setup time, increases production parity, 
 
 ## Installation
 
-1. Download and install Install VirtualBox 5.1.X (https://www.virtualbox.org/wiki/Downloads)
+1. Download and install Install VirtualBox 5.2.X (https://www.virtualbox.org/wiki/Downloads)
 
-2. Download and install Vagrant 1.9.X (http://www.vagrantup.com/downloads.html)
+2. Download and install Vagrant 2.0.X (http://www.vagrantup.com/downloads.html)
 
 3. Go to your terminal and `cd` into apprentice project directory:
 
