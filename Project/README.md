@@ -36,6 +36,10 @@ Vagrant lowers development environment setup time, increases production parity, 
   ```
    $ vagrant ssh
   ```
+  
+ 8. If Everything was installed correctly you should see something like this in your screen:
+
+<img width="1097" alt="screen shot 2018-03-01 at 10 03 49 pm" src="https://user-images.githubusercontent.com/7410981/36910845-16cdbe2e-1dff-11e8-8060-35209d32d9f4.png">
 
 **Tip 💡**: Instead of running `vagrant up` and then `vagrant ssh` you can do both commands in one line: `vagrant up && vagrant ssh`
 
