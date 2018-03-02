@@ -2,13 +2,9 @@
 
 The terminal is a command-line interface app to control the operating system with text based commands
 
-*FOTO DE UNA TERMINAL (APP)
-
 To understand what the terminal is we need to ask ourselves, if the user interface in the computer would not exist how we would be able to operate it normally as we do? move across the directories and editing files? 
 
 The terminal emulator also known as just 'Terminal' is a programs created to display the computer's data, the term comes from when users used to connect through a hardware called terminals that were only a display and a keyboard connected to a main computer called mainframe with a specific user who had specific permissions
-
-*FOTO DE UNA TERMINAL (HARDWARE)
 
 You may be wondering 'Why would I want to learn how to use the terminal if I already know how to use the graphical user interface (GUI)?' 
 
@@ -183,17 +179,60 @@ Notice that we had to use **$** sign before the PS1 variable name, it's not used
 
 Now, yeah, that variable is printed every time you hit enter, that's how we see the prompt, so if we change the value of the $PS1 variable we will see another prompt
 
-
+```
+export PS1="new prompt"
+```
+Yup, that's your new prompt, to go back just add again the previous value
 
 
 
 #### Other casual commands
-whoami
-localhost
-Cal
-date
-file
-apt-get moo
+
+These are another handful of useful commands, to give you more vision of your environment while using the terminal, when everything seems dark.
+
+To know what's the user you are currently using
+```
+danielvilla@Daniels-MacBook-Air:~/apprentice$ whoami
+danielvilla
+```
+To know the name of the machine you are currently on
+```
+danielvilla@Daniels-MacBook-Air:~/apprentice$ hostname
+Daniels-MacBook-Air.local
+
+```
+To display a beautiful calendar
+```
+danielvilla@Daniels-MacBook-Air:~/apprentice$ cal
+     March 2018       
+Su Mo Tu We Th Fr Sa  
+             1  2  3  
+ 4  5  6  7  8  9 10  
+11 12 13 14 15 16 17  
+18 19 20 21 22 23 24  
+25 26 27 28 29 30 31  
+```
+To know exactly what day is today with the current time
+```
+danielvilla@Daniels-MacBook-Air:~/apprentice$ date
+Fri Mar  2 02:04:44 MST 2018
+```
+To know the description of a file
+```
+danielvilla@Daniels-MacBook-Air:~/apprentice$ file README.md 
+README.md: UTF-8 Unicode text
+```
+To display a cow
+```
+vagrant@vagrant-ubuntu-trusty-64:~$ apt-get moo
+                 (__) 
+                 (oo) 
+           /------\/ 
+          / |    ||   
+         *  /\---/\ 
+            ~~   ~~   
+..."Have you mooed today?"...
+```
 
 
 #### Asking for help (RTFM)
@@ -249,6 +288,8 @@ vdir (1)             - list directory contents
 Yes, the command **apropos** searches for a command that fits your description
 
 #### Creating files and directories
+mkdir 
+mkdir -p
 touch
 vi
 >
