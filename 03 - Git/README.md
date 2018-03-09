@@ -10,7 +10,7 @@ Version control is a system that records changes to a file or set of files over 
 Kinda like save states.
 
 <p align="center">
-<img align="center" src="img1-source">
+<img align="center" src="https://user-images.githubusercontent.com/7427385/37220048-9be6a35e-2382-11e8-9011-8111be2843f4.png">
 </p>
 
 ## A little history of VCS.
@@ -20,13 +20,13 @@ Kinda like save states.
 A very common and simple version control system is to copy files into another directory in order to save another version of our work (v1.0, v2.0…). This is approach, however, is incredibly error prone. Not only takes a lot of space, but it’s easy to accidentally delete files you didn’t mean to, or write into wrong directories, messing up all your work, adding new bugs and a LOT of overhead while trying to collaborate between your team members.
 
 <p align="center">
-<img align="center" src="img1-source">
+<img align="center" src="https://user-images.githubusercontent.com/7427385/37220067-ad13fb36-2382-11e8-96e5-b12e5beb023c.png">
 </p>
 
 To avoid this kind of errors, VCS tools were developed. The first kind of VCS tools that were developed were local VCS.
 
 <p align="center">
-<img align="center" src="img2-source">
+<img align="center" src="https://user-images.githubusercontent.com/7427385/37220084-bee57038-2382-11e8-8f24-6bc806cd9d23.png">
 </p>
 
 With this tools, versions were now saved on a database in a special format rather than the local file system and files could be returned to previous versions in a more elegant way.
@@ -38,7 +38,7 @@ Here's were Centralized Version Control Systems came into play.
 With this VCS (Also called CVCS), developers were now able to collaborate with others. Basically, a central code repository stores all versions of a project. Developers can copy different versions of the codebase into their own environments and save their changes in the central repository.
 
 <p align="center">
-<img align="center" src="img3-source">
+<img align="center" src="https://user-images.githubusercontent.com/7427385/37220103-cdb709e6-2382-11e8-96fa-9468b67a6265.png">
 </p>
 
 This system had many advantages compared to local VCS. Developers can see what other team members are doing and maintenance work became so much easier, since there’s only one centralized code repository, instead of many local repositories.
@@ -53,7 +53,7 @@ With this system, developers not only copy the latest version of a file or a ver
 
 
 <p align="center">
-<img align="center" src="img3-source">
+<img align="center" src="https://user-images.githubusercontent.com/7427385/37220127-dd20dad8-2382-11e8-873e-b7aa5a0d8092.png">
 </p>
 
 
@@ -144,7 +144,7 @@ The basic Git workflow goes something like this:
 3. You do a commit, which takes the files as they are in the staging area and stores that snapshot permanently to your Git directory.
 
 <p align="center">
-<img align="center" src="img2-source">
+<img align="center" src="https://user-images.githubusercontent.com/7427385/37220223-2d8afa1c-2383-11e8-95c2-45ea4a63b1c7.png">
 </p>
 
 First, we want to see which files are present in our working tree and decide to put them (or not) in our staging area
@@ -276,7 +276,7 @@ git push -u origin master
 Now, if you run `git log`, You'll notice that your new commit is there on the `master` branch.
 
 <p align="center">
-<img align="center" src="img1-source">
+<img align="center" src="https://user-images.githubusercontent.com/7427385/37220229-32b2ca1a-2383-11e8-8519-e481dce6de06.png">
 </p>
 
 ## Pull requests
