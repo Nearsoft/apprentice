@@ -24,7 +24,7 @@ Kinda like save states.
 <img align="center" width="500" src="https://user-images.githubusercontent.com/7427385/37220048-9be6a35e-2382-11e8-9011-8111be2843f4.png">
 </p>
 
-## A little history of VCS.
+## A little history of VCS
 
 ### Local Version Control Systems
 
@@ -115,7 +115,7 @@ Create a test file
 echo "# test" >> test.txt
 ```
 
-Go into your directory and run 	git init
+Go into your directory and run `git init`
 
 ```
 cd myproject
@@ -125,7 +125,7 @@ git init
 This command creates an empty Git repository, right now it’s only in your local environment.
 In order to start collaborating with your teammates, you’ll need it to be centralized on a remote code repository. We’ll use GitHub for it.
 
-Follow this steps to create a new remote repository.
+Follow this steps to create a new remote repository:
 
 ```
 Go to github.
@@ -159,12 +159,12 @@ The basic Git workflow goes something like this:
 </p>
 
 First, we want to see which files are present in our working tree and decide to put them (or not) in our staging area
-We can check this files using the command
+We can check this files using the command:
 ```
 git status
 ```
 
-We’ll see something like this
+We’ll see something like this:
 
 ```
 On branch master
@@ -187,18 +187,17 @@ This will let git know that the file is ready to be on staging area. Once we hav
 ```
 git commit -m “<your_commit_message>”
 ```
-> <your_commit_message>: This could be a short description of what changes does the commit makes.
+> <your_commit_message>: This could be a short description of what changes does the commit make.
 
 Now we have our files in our git directory, ready to be sent to our remote repository so everyone can see them.
 ```
 git push -u origin master
 ```
-> origin is an alias for our remote repository. If you run
+> origin is an alias for our remote repository. If you run:
 ```
 git remote -v
 ```
-
-You’ll be able to see what URL belongs to each remote.
+> You’ll be able to see what URL belongs to each remote.
 
 _**Note: After you execute this command, you’ll need to authenticate yourself with your email and GitHub password. This is done as a security measure. If you don’t want to type your password every time, you can clone the repository using SSH, however, some further steps are needed, if you want to try, just follow this instructions: http://kbroman.org/github_tutorial/pages/first_time.html**_
 
@@ -206,7 +205,7 @@ Now go to https://github.com/username/new_repo. You’ll see that your files are
 
 Now you’re all set to start using GitHub like a pro.
 
-### Existing git repository.
+### Existing git repository
 
 This is even easier. In this case, you just have to clone the remote repository and you can start working on it.
 
@@ -216,8 +215,8 @@ git clone https://github.com/username/new_repo
 
 However, you’ll not be able to push code out of the box. We don’t want strangers messing with our codebase. In order to be able to push, you need to be listed as a collaborator of the repository.
 
+* Exercise:
 ```
-Exercise:
 Add a new collaborator in your repository and ask him to add a new file with his own “Hello World” implementation. This can be in any language you like and in the main directory.
 Remember, the commit message is a little description about your changes.
 ```
@@ -236,7 +235,7 @@ If you want a list of the commits present on branch master you can use:
 git log
 ```
 
-Then, using the commit hash, you can see more information using
+Then, using the commit hash, you can see more information using:
 
 ```
 git show <hash>
@@ -249,12 +248,12 @@ This will show information like new files, deleted files, new added code, remove
 When working on a project, there are going to be many different features to add, bugs to fix, or even new ideas to try. Changes that could potentially break other functionality. We use branching to help us with this issues.
 When creating a branch, we’re basically copying our own version of the project, creating an environment to test out new ideas and make changes that don’t affect the master branch.
 
-To create a branch, simply run this command on your terminal
+To create a branch, simply run this command on your terminal:
 
 ```
 git branch <branch_name>
 ```
-_***<branch_name>: A significant name about what you’re working on. Example: story-123-fixing-payment-issues***_
+_**<branch_name>: A significant name about what you’re working on. Example: story-123-fixing-payment-issues**_
 
 After you create it, you must move to the that branch before starting to work on it. You do so by using command
 
@@ -262,12 +261,12 @@ After you create it, you must move to the that branch before starting to work on
 git checkout <branch_name>
 ```
 
-_***If you want to create a branch and check out at the same time you can use `git checkout -b <branch_name>`***_
+_**If you want to create a branch and check out at the same time you can use `git checkout -b <branch_name>`**_
 
 Now we're ready to start working on our new feature
 
+* Exercise:
 ```
-Exercise:
 Change your teammate "Hello, World" implementation to any other phrase you want and then commit and push your changes.
 ```
 
@@ -299,7 +298,7 @@ This way, branches become cleaner and easily maintainable.
 
 To perform a pull request (PR for short). Follow the branches tutorial but skip the merging phase. Instead, go to your repository on GitHub and click on _Compare and pull request_.
 
-First of all, you need to select which branch are you going to merge to, in this case select `master`.
+First of all, you need to select which branch you are going to merge to, in this case select `master`.
 Then, select the branch with your changes.
 
 <p align="center">
@@ -333,8 +332,9 @@ The process is the same. The only difference is that, while creating your PR, yo
 <img align="center" src="https://user-images.githubusercontent.com/7427385/37221766-441920d8-2388-11e8-9c53-a36c074c657f.png">
 </p>
 
+* Exercise:
+
 ```
-Exercise:
 Fork the Apprentice repository and checkout to `git-exercise` branch.
 Create a new file under the _Exercise_ directory with a program that prints your full name.
 The file structure should be: <first letter of your name><your last name>_<date with DDMMYY format>.<program extension>
