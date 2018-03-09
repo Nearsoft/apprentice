@@ -1,4 +1,15 @@
 # Git
+
+After this module, you'll know how to:
+
+* Create a new repository
+* Collaborate with your teammates
+* Commiting your changes
+* Create new branches
+* Push code to a shared repository
+* Learn the basics of git workflow
+* Fork repositories and create pull requests
+
 ## About Version Control
 
 What is _version control_?
@@ -10,7 +21,7 @@ Version control is a system that records changes to a file or set of files over 
 Kinda like save states.
 
 <p align="center">
-<img align="center" src="https://user-images.githubusercontent.com/7427385/37220048-9be6a35e-2382-11e8-9011-8111be2843f4.png">
+<img align="center" width="500" src="https://user-images.githubusercontent.com/7427385/37220048-9be6a35e-2382-11e8-9011-8111be2843f4.png">
 </p>
 
 ## A little history of VCS.
@@ -20,13 +31,13 @@ Kinda like save states.
 A very common and simple version control system is to copy files into another directory in order to save another version of our work (v1.0, v2.0…). This is approach, however, is incredibly error prone. Not only takes a lot of space, but it’s easy to accidentally delete files you didn’t mean to, or write into wrong directories, messing up all your work, adding new bugs and a LOT of overhead while trying to collaborate between your team members.
 
 <p align="center">
-<img align="center" src="https://user-images.githubusercontent.com/7427385/37220067-ad13fb36-2382-11e8-96e5-b12e5beb023c.png">
+<img align="center" width="700" src="https://user-images.githubusercontent.com/7427385/37220067-ad13fb36-2382-11e8-96e5-b12e5beb023c.png">
 </p>
 
 To avoid this kind of errors, VCS tools were developed. The first kind of VCS tools that were developed were local VCS.
 
 <p align="center">
-<img align="center" src="https://user-images.githubusercontent.com/7427385/37220084-bee57038-2382-11e8-8f24-6bc806cd9d23.png">
+<img align="center" width="500" src="https://user-images.githubusercontent.com/7427385/37220084-bee57038-2382-11e8-8f24-6bc806cd9d23.png">
 </p>
 
 With this tools, versions were now saved on a database in a special format rather than the local file system and files could be returned to previous versions in a more elegant way.
@@ -38,7 +49,7 @@ Here's were Centralized Version Control Systems came into play.
 With this VCS (Also called CVCS), developers were now able to collaborate with others. Basically, a central code repository stores all versions of a project. Developers can copy different versions of the codebase into their own environments and save their changes in the central repository.
 
 <p align="center">
-<img align="center" src="https://user-images.githubusercontent.com/7427385/37220103-cdb709e6-2382-11e8-96fa-9468b67a6265.png">
+<img align="center" width="500"  src="https://user-images.githubusercontent.com/7427385/37220103-cdb709e6-2382-11e8-96fa-9468b67a6265.png">
 </p>
 
 This system had many advantages compared to local VCS. Developers can see what other team members are doing and maintenance work became so much easier, since there’s only one centralized code repository, instead of many local repositories.
@@ -53,7 +64,7 @@ With this system, developers not only copy the latest version of a file or a ver
 
 
 <p align="center">
-<img align="center" src="https://user-images.githubusercontent.com/7427385/37220127-dd20dad8-2382-11e8-873e-b7aa5a0d8092.png">
+<img align="center" width="500" src="https://user-images.githubusercontent.com/7427385/37220127-dd20dad8-2382-11e8-873e-b7aa5a0d8092.png">
 </p>
 
 
@@ -144,7 +155,7 @@ The basic Git workflow goes something like this:
 3. You do a commit, which takes the files as they are in the staging area and stores that snapshot permanently to your Git directory.
 
 <p align="center">
-<img align="center" src="https://user-images.githubusercontent.com/7427385/37220223-2d8afa1c-2383-11e8-95c2-45ea4a63b1c7.png">
+<img align="center" width="700" src="https://user-images.githubusercontent.com/7427385/37220223-2d8afa1c-2383-11e8-95c2-45ea4a63b1c7.png">
 </p>
 
 First, we want to see which files are present in our working tree and decide to put them (or not) in our staging area
@@ -276,20 +287,54 @@ git push -u origin master
 Now, if you run `git log`, You'll notice that your new commit is there on the `master` branch.
 
 <p align="center">
-<img align="center" src="https://user-images.githubusercontent.com/7427385/37220229-32b2ca1a-2383-11e8-8519-e481dce6de06.png">
+<img align="center" height="500" src="https://user-images.githubusercontent.com/7427385/37220229-32b2ca1a-2383-11e8-8519-e481dce6de06.png">
 </p>
 
 ## Pull requests
 Pull requests are a way to propose new changes on your project.
 
-Instead of merging directly to your master branch. You open a pull requests to let other review and approve your changes before merging to the master branch. 
+Instead of merging directly to your master/development branch. You open a pull request to let other review and approve your changes before merging.
+
+This way, branches become cleaner and easily maintainable.
+
+To perform a pull request (PR for short). Follow the branches tutorial but skip the merging phase. Instead, go to your repository on GitHub and click on _Compare and pull request_.
+
+First of all, you need to select which branch are you going to merge to, in this case select `master`.
+Then, select the branch with your changes.
+
+<p align="center">
+<img align="center" height="500" src="https://user-images.githubusercontent.com/7427385/37221224-6e538fe8-2386-11e8-90b4-32214b5910ce.png">
+</p>
+
+Click on `Create pull request` button to create the PR.
+
+<p align="center">
+<img align="center" height="500" src="https://user-images.githubusercontent.com/7427385/37221223-6e3dac78-2386-11e8-85ec-03f03d43759d.png">
+</p>
+
+After reviewing, your teammates can leave comments proposing changes on your code and you can fix them on your branch without messing with the `master` branch.
+
+Once the merge is ready to go, just click on `Merge pull request` and your changes will be merged with the master branch.
 
 ## Forks
 A fork is a copy of a repository, you can fork any public repository and propose new changes or solve issues.
 
 When you fork a repository on GitHub, you'll make your own copy under your username.
 
+To propose new changes, simply fork any public repository, make your changes, and make a PR on the repository.
+
+<p align="center">
+<img align="center" height="500" src="https://user-images.githubusercontent.com/7427385/37221765-4400c1d2-2388-11e8-810d-28d51b1fce17.png">
+</p>
+
+The process is the same. The only difference is that, while creating your PR, you will be prompted to specify which fork are you merging from.
+
+<p align="center">
+<img align="center" height="500" src="https://user-images.githubusercontent.com/7427385/37221766-441920d8-2388-11e8-9c53-a36c074c657f.png">
+</p>
+
 ```
+Exercise:
 Fork the Apprentice repository and checkout to `git-exercise` branch.
 Create a new file under the _Exercise_ directory with a program that prints your full name.
 The file structure should be: <first letter of your name><your last name>_<date with DDMMYY format>.<program extension>
@@ -297,6 +342,6 @@ Example: esanchez_090318.java
 In the commit message add a little description of your change along with an identifier
 Example:
 esanchez_090318 - Completing PR exercise
+Once you do, we'll review and approve your changes.
 ```
 
-Once you do, we'll review and approve your changes.
