@@ -303,13 +303,13 @@ First of all, you need to select which branch are you going to merge to, in this
 Then, select the branch with your changes.
 
 <p align="center">
-<img align="center" height="500" src="https://user-images.githubusercontent.com/7427385/37221224-6e538fe8-2386-11e8-90b4-32214b5910ce.png">
+<img align="center" src="https://user-images.githubusercontent.com/7427385/37221224-6e538fe8-2386-11e8-90b4-32214b5910ce.png">
 </p>
 
 Click on `Create pull request` button to create the PR.
 
 <p align="center">
-<img align="center" height="500" src="https://user-images.githubusercontent.com/7427385/37221223-6e3dac78-2386-11e8-85ec-03f03d43759d.png">
+<img align="center" src="https://user-images.githubusercontent.com/7427385/37221223-6e3dac78-2386-11e8-85ec-03f03d43759d.png">
 </p>
 
 After reviewing, your teammates can leave comments proposing changes on your code and you can fix them on your branch without messing with the `master` branch.
@@ -324,13 +324,13 @@ When you fork a repository on GitHub, you'll make your own copy under your usern
 To propose new changes, simply fork any public repository, make your changes, and make a PR on the repository.
 
 <p align="center">
-<img align="center" height="500" src="https://user-images.githubusercontent.com/7427385/37221765-4400c1d2-2388-11e8-810d-28d51b1fce17.png">
+<img align="center" src="https://user-images.githubusercontent.com/7427385/37221765-4400c1d2-2388-11e8-810d-28d51b1fce17.png">
 </p>
 
 The process is the same. The only difference is that, while creating your PR, you will be prompted to specify which fork are you merging from.
 
 <p align="center">
-<img align="center" height="500" src="https://user-images.githubusercontent.com/7427385/37221766-441920d8-2388-11e8-9c53-a36c074c657f.png">
+<img align="center" src="https://user-images.githubusercontent.com/7427385/37221766-441920d8-2388-11e8-9c53-a36c074c657f.png">
 </p>
 
 ```
