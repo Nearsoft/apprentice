@@ -276,9 +276,11 @@ After you finish working on your feature, it's now ready to be added to the mast
 
 Make sure both of your branches are up to date using `git pull` and then run
 
+On master:
 ```
-git checkout <branch_name>
 git pull
+git checkout <branch_name>
+git pull origin <branch_name>
 git checkout master
 git merge <branch_name>
 git push -u origin master
@@ -288,6 +290,20 @@ Now, if you run `git log`, You'll notice that your new commit is there on the `m
 <p align="center">
 <img align="center" height="500" src="https://user-images.githubusercontent.com/7427385/37220229-32b2ca1a-2383-11e8-8519-e481dce6de06.png">
 </p>
+
+## Keep your branches up to date
+When we're working on a different branch, sometimes we fall behind master. So we need to make sure we always keep our branches up to date.
+
+We can `water` our branches using:
+On our master:
+```
+git pull
+git checkout <branch_name>
+git pull origin <branch_name>
+git merge master
+git commit -m "Updating from master"
+git push origin <branch_name>
+```
 
 ## Pull requests
 Pull requests are a way to propose new changes on your project.
@@ -325,6 +341,18 @@ To propose new changes, simply fork any public repository, make your changes, an
 <p align="center">
 <img align="center" src="https://user-images.githubusercontent.com/7427385/37221765-4400c1d2-2388-11e8-810d-28d51b1fce17.png">
 </p>
+
+* Keep your forks up to date
+> Forks can fall behind too, before making a PR, make sure your fork us up to date with the original repository. To do so:
+You have to add the upstream repo on your remotes:
+
+```
+git remote add upstream git://github.com/ORIGINAL-DEV-USERNAME/REPO-YOU-FORKED-FROM.git
+git fetch upstream
+git pull upstream <branch>
+git commit -m "updating from upstream master"
+git push origin <branch>
+```
 
 The process is the same. The only difference is that, while creating your PR, you will be prompted to specify which fork are you merging from.
 
