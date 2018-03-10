@@ -41,11 +41,15 @@ Vagrant lowers development environment setup time, increases production parity, 
 
 <img width="1097" alt="screen shot 2018-03-01 at 10 03 49 pm" src="https://user-images.githubusercontent.com/7410981/36910845-16cdbe2e-1dff-11e8-8060-35209d32d9f4.png">
 
+9. Once you're done using your *virtual machine* use the following command in your *local machine* to shut it down.
+
+```
+$ vagrant halt
+```
+
 **Tip 💡**: Instead of running `vagrant up` and then `vagrant ssh` you can do both commands in one line: `vagrant up && vagrant ssh`
 
 **Note ⚠️**: To exit vagrant in your terminal type: `exit`
-
-**Note ⚠️**: Once you're done using your virtual machine type `vagrant halt` in your local machine to shut it down.
 
 ### Useful aliases
 
