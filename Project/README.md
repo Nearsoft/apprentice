@@ -5,6 +5,9 @@ Vagrant is a tool for building and managing virtual machine environments in a si
 
 Vagrant lowers development environment setup time, increases production parity, and makes the "works on my machine" excuse a relic of the past.
 
+## Prerequisites
+It is strongly recommended that you first read [02 - Terminal](apprentice/tree/master/02%20-%20Terminal) to get your project up and running.
+
 ## Installation
 
 1. Download and install Install VirtualBox 5.2.X (https://www.virtualbox.org/wiki/Downloads)
