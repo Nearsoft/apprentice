@@ -45,6 +45,7 @@ Vagrant lowers development environment setup time, increases production parity, 
 
 **Note ⚠️**: To exit vagrant in your terminal type: `exit`
 
+**Note ⚠️**: Once you're done using your virtual machine type `vagrant halt` in your local machine to shut it down.
 
 ### Useful aliases
 
@@ -52,7 +53,7 @@ To save some time you can use the following command aliases once you're inside t
 
 Command | Action
 ------------ | -------------
-root | `cd`s into `/apprentice` path
-app | `cd`s into the rails app
-api | `cd`s into react app
+root | `cd` into `/apprentice` path
+app | `cd` into the rails app
+api | `cd` into react app
 rs | bring up the `rails server`
