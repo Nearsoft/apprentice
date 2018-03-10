@@ -108,6 +108,7 @@ cd share
 mkdir workspace
 cd workspace
 mkdir myproject
+cd myproject
 ```
 
 Create a test file
@@ -372,4 +373,3 @@ Example:
 esanchez_090318 - Completing PR exercise
 Once you do, we'll review and approve your changes.
 ```
-
