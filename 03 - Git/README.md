@@ -371,5 +371,8 @@ Example: esanchez_090318.java
 In the commit message add a little description of your change along with an identifier
 Example:
 esanchez_090318 - Completing PR exercise
-Once you do, we'll review and approve your changes.
+Submit a new pull request to the Apprentice repo from your fork
+From yourusername/Apprentice to Nearsoft/Apprentice
+Remember to create the pull request to the git-exercise branch
+Once you do, we'll review and approve your changes
 ```
