@@ -5,6 +5,9 @@ Vagrant is a tool for building and managing virtual machine environments in a si
 
 Vagrant lowers development environment setup time, increases production parity, and makes the "works on my machine" excuse a relic of the past.
 
+## Prerequisites
+It is strongly recommended that you first read [02 - Terminal](https://github.com/Nearsoft/apprentice/tree/master/02%20-%20Terminal) to get your project up and running.
+
 ## Installation
 
 1. Download and install Install VirtualBox 5.2.X (https://www.virtualbox.org/wiki/Downloads)
@@ -41,10 +44,15 @@ Vagrant lowers development environment setup time, increases production parity, 
 
 <img width="1097" alt="screen shot 2018-03-01 at 10 03 49 pm" src="https://user-images.githubusercontent.com/7410981/36910845-16cdbe2e-1dff-11e8-8060-35209d32d9f4.png">
 
+9. Once you're done using your *virtual machine* use the following command in your *local machine* to shut it down.
+
+```
+$ vagrant halt
+```
+
 **Tip 💡**: Instead of running `vagrant up` and then `vagrant ssh` you can do both commands in one line: `vagrant up && vagrant ssh`
 
 **Note ⚠️**: To exit vagrant in your terminal type: `exit`
-
 
 ### Useful aliases
 
@@ -52,7 +60,7 @@ To save some time you can use the following command aliases once you're inside t
 
 Command | Action
 ------------ | -------------
-root | `cd`s into `/apprentice` path
-app | `cd`s into the rails app
-api | `cd`s into react app
+root | `cd` into `/apprentice` path
+app | `cd` into the rails app
+api | `cd` into react app
 rs | bring up the `rails server`
