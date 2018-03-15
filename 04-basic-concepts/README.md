@@ -17,14 +17,19 @@ Remember that programming is not about memorization. Where in doubt, you can alw
 
 The internet is an ever growing web of machines connected between each other. Similar to how houses are connected in a city, and cities are connected to each other, if you don't know which direction to take, you're going to get lost.
 
+
 The most usual and high level way to locate a website is by it's **URL**, this term stands for *Uniform Resource Locator* and it's an encoded string which let's us identify a location in a computer network and the means of retrieving a resource on that machine.
 Let's take a look at the programming subreddit URL to identify its basic parts: [https://www.reddit.com/r/programming/](https://www.reddit.com/r/programming/).
 
+
 First we have the *scheme* `https` which denotes the protocol used for communication. Then we have the *hostname* `www.reddit.com` which is basically the domain to which the URL is referring to. And lastly we have a *path* to the `/r/programming/` resource, which identifies that of all the content in that website, we want to get the programming subreddit feed.
+
 
 As it's very common with technical definitions, there's more details and complexity in the precise [definition of URL](https://tools.ietf.org/html/rfc3986), but the simplified definition from above can help us untangle other concepts, in particular regarding the hostname.
 
+
 It turns out that `reddit.com` is not the direct location of the machine where the site is hosted. Similar to how house addresses are not the latitude and longitude coordinates, but a more easily to remember combination of names. Websites locations are directly identified by an *IP address*.
+
 
 The structure of IP addresses differs from version to version, the most widely use version is IPv4 which reads as a four numbers from 0 to 255 separated by dots like:
 
@@ -32,7 +37,9 @@ The structure of IP addresses differs from version to version, the most widely u
 - 208.80.153.224 (Wikipedia)
 - 172.217.2.238 (Google)
 
+
 Go ahead and enter [http://172.217.2.238](http://172.217.2.238) into your browser's address bar. You'll see google popping up. But how do we know `www.google.com` refers to this address?
+
 
 Well, the Google domain is registered in a **DNS** (which stands for *Domain Name System*). These DNS are like tables that translate memorizable names to the numerical IP addresses needed for locating a machine.
 
@@ -40,6 +47,28 @@ Well, the Google domain is registered in a **DNS** (which stands for *Domain Nam
 
 > The fundamental concepts from this section are HTTP, HTTPS, POP, IMAP, SMTP, FTP, and SSH
 
+
+For two programs or machines to communicate over a network with one another, there needs to be a set of rules that mandate how the information should be interpreted. These sets of rules are called network protocols.
+
+
+There are a vast number of these protocols in use today, some of them are improvements over predecessors, other ones shine in particular use cases.
+
+
+One of the most used protocols is **HTTP** (which stands for *Hypertext Transfer Protocol*), most web applications and online services rely on HTTP. It's the foundation of data communication for the World Wide Web.
+This protocol is based on a client sending requests to a server, and the server sending responses to the client, where each response is associated with a request.
+
+
+Each HTTP request has an associated *method* which is a semantic construct design to indicate what the request is for. There a quite a few methods, but here we'll only discuss the most used.
+The **GET** method requests a representation of a particular resource, and denotes that data should only be retrieved.
+The **POST** method requests that the server accept and process a piece of information associated with a resource.
+The **PUT** method requests that a piece of information should be stored under the supplied resource.
+The **DELETE** method requests that the specified resource should be deleted.
+
+
+There are other useful protocols which are commonly used for specific use cases:
+- The File Transfer Protocol (**FTP**) is used for transferring files between two machines in a network.
+- The Secure Shell protocol (**SSH**) is used for remotely logging in to a computer system.
+- The Post Office Protocol (**POP**), Internet Message Access Protocol (**IMAP**), and Simple Mail Transfer Protocol (**SMTP**) are mostly used to send and retrieve emails.
 
 ## The Ends of a Web Application
 
