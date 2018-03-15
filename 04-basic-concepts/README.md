@@ -75,6 +75,29 @@ There are other useful protocols which are commonly used for specific use cases:
 > The fundamental concepts from this section are front-end, back-end, and frameworks
 
 
+A web application can be conceptualized and broken apart in several ways, a common separation of concerns from an architectural point of view is the identification of the **front end** and  **back end**.
+When someone refers to the front end, they usually are talking about the part of the application that runs in the client (for example, in the browser).
+In the same vein, the back end is mostly associated with the part of the application that runs in the server (the machine that communicates with the browser).
+However this is not always the case.
+
+
+Other ways in which the front end and back end differ is in the level of interaction with the user. Most of the time, the user of the application is going to interact exclusively with the front end, which in turn, communicates with the back end.
+It's common to also refer to the visual/interactive aspects of an application "the front end", and to the data-handling/business-logic aspects "the back end".
+
+
+It's worth noting that these distinctions are not universal. Some applications do all the business logic in the client code, handling only the data persistence in the server code.
+Some applications don't have a visual layer and their back ends consist of clients which communicate with other back ends.
+
+
+In the next two section we'll talk about the usual knowledge a front end developer and a back end developer have.
+
+An important thing to note is that there are a lot of tools which can make your life easier if you lack knowledge or skill in either front or back end. There are frameworks which provide good configuration defaults and allow you to focus your attention to the business logic of your application.
+
+
+Learning both front end and back end development at the same time can be quite overwhelming, so if you ever want to get an app up and running with no hassle you could for example:
+- Ignore the back end details and use Google Firebase or implement a thin back end layer to just persist information.
+- Ignore the front end details and write a standalone API or use Bootstrap for putting together a nice looking simple interface.
+
 ## Behind the Website
 
 > The fundamental concepts from this section are API, Web Server, Cookies, and Database
