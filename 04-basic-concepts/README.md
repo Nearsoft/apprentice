@@ -1,6 +1,6 @@
-# Basic Concepts
-
-> This document is based of the following presentation by Cristian Cota: [http://slides.com/cristiancota/basic-concepts](http://slides.com/cristiancota/basic-concepts)
+---
+title: Basic Concepts
+---
 
 
 The world of web development orbits around a galaxy of interconnected concepts, techniques, and technologies which are constantly evolving. This can sometimes hinder the ability of newcomers to learn and practice the craft effectively.
@@ -11,9 +11,9 @@ To help build a solid foundation for learning web development, we're going to go
 
 Remember that programming is not about memorization. Where in doubt, you can always refer to this chapter to refresh your memory and review the concepts.
 
-## Locating Sites in the Web
 
-> The fundamental concepts from this section are URL, Domain, IP address, and DNS
+# Locating Sites on the Web
+
 
 The internet is an ever growing web of machines connected between each other. Similar to how houses are connected in a city, and cities are connected to each other, if you don't know which direction to take, you're going to get lost.
 
@@ -43,9 +43,8 @@ Go ahead and enter [http://172.217.2.238](http://172.217.2.238) into your browse
 
 Well, the Google domain is registered in a **DNS** (which stands for *Domain Name System*). These DNS are like tables that translate memorizable names to the numerical IP addresses needed for locating a machine.
 
-## The Languages of the Digital Hyperspace
 
-> The fundamental concepts from this section are HTTP, HTTPS, POP, IMAP, SMTP, FTP, and SSH
+# The Languages of the Digital Hyperspace
 
 
 For two programs or machines to communicate over a network with one another, there needs to be a set of rules that mandate how the information should be interpreted. These sets of rules are called network protocols.
@@ -66,13 +65,15 @@ The **DELETE** method requests that the specified resource should be deleted.
 
 
 There are other useful protocols which are commonly used for specific use cases:
+
 - The File Transfer Protocol (**FTP**) is used for transferring files between two machines in a network.
+
 - The Secure Shell protocol (**SSH**) is used for remotely logging in to a computer system.
+
 - The Post Office Protocol (**POP**), Internet Message Access Protocol (**IMAP**), and Simple Mail Transfer Protocol (**SMTP**) are mostly used to send and retrieve emails.
 
-## The Ends of a Web Application
 
-> The fundamental concepts from this section are front-end, back-end, and frameworks
+# The Ends of a Web Application
 
 
 A web application can be conceptualized and broken apart in several ways, a common separation of concerns from an architectural point of view is the identification of the **front end** and  **back end**.
@@ -91,194 +92,63 @@ Some applications don't have a visual layer and their back ends consist of clien
 
 In the next two section we'll talk about the usual knowledge a front end developer and a back end developer have.
 
+
 An important thing to note is that there are a lot of tools which can make your life easier if you lack knowledge or skill in either front or back end. There are frameworks which provide good configuration defaults and allow you to focus your attention to the business logic of your application.
 
 
 Learning both front end and back end development at the same time can be quite overwhelming, so if you ever want to get an app up and running with no hassle you could for example:
+
 - Ignore the back end details and use Google Firebase or implement a thin back end layer to just persist information.
+
 - Ignore the front end details and write a standalone API or use Bootstrap for putting together a nice looking simple interface.
 
-## Behind the Website
 
-> The fundamental concepts from this section are API, Web Server, Cookies, and Database
-
-
-## The Website in the Eye of the Beholder
-
-> The fundamental concepts from this section are HTML, CSS, JavaScript, AJAX, Responsive Design, Grid System, RGB/Hex, SEO
+An example of a type of system that requires a tight integration between a front and a back end is a *Content Management System* (**CMS**) which is an application that supports the creation and modification of digital content, usually supporting multiple users in a collaborative environment and the means for those users to publish and consume content.
 
 
-## The Tools of the Craft
-
-> The fundamental concepts from this section are WYSIWYG, GUI, Developer tools, Code, Version Control, Git, Open Source
-
-# Topics
-
-## URL (Uniform Resource Locator)
-
-> It's the address of the webpage that you're trying to get.
-
-A Uniform Resource Locator (commonly known as a web address), is a reference to a web resource that specifies its location on a computer network and a mechanism for retrieving it.
+# Behind the Website
 
 
-## Domain
-
-> The part of the URL which specifies the location of the web server who is going to respond to your request.
-
-A domain name is an identification string that defines a realm of administrative autonomy, authority or control within the Internet.
-
-Domain names serve to identify Internet resources, such as computers, networks, and services, with a text-based label that is easier to memorize than the numerical addresses used in the Internet protocols.
-
-## IP Address
-
-> The IP Address is the actual definitive address of a computer or server on the web.
-
-An Internet Protocol address is a numerical label assigned to each device connected to a computer network that uses the Internet Protocol for communication.
-
-## DNS (Domain Name System)
-
-> Maps the human-readable domains to their actual IP address locations
-
-The Domain Name System is a hierarchical decentralized naming system for computers, services, or other resources connected to the Internet or a private network. It associates various information with domain names assigned to each of the participating entities.
-
-It translates more readily memorized domain names to the numerical IP addresses needed for locating and identifying computer services and devices with the underlying network protocols.
-
-## HTTP (Hypertext Transfer Protocol)
-
-> Protocol used across the web for just about all communication between clients and servers.
-
-The Hypertext Transfer Protocol is an application protocol for distributed, collaborative, and hypermedia information systems. HTTP is the foundation of data communication for the World Wide Web.
-
-### HTTP Verbs
-
-> - Post
-> - Get
-> - Put
-> - Delete
-
-HTTP defines methods (sometimes referred to as verbs) to indicate the desired action to be performed on the identified resource.
-
-#### GET
-
-The GET method requests a representation of the specified resource. Requests using GET should only retrieve data and should have no other effect.
-
-#### POST
-
-The POST method requests that the server accept the entity enclosed in the request as a new subordinate of the web resource identified by the URI.
-
-#### PUT
-
-The PUT method requests that the enclosed entity be stored under the supplied URI.
-
-#### DELETE
-
-The DELETE method deletes the specified resource.
-
-## HTTPS
-
-HTTP Secure is an adaptation of the HTTP for secure communication over a computer network, and is widely used on the Internet.
-
-## POP, IMAP & SMTP
-
-The Post Office Protocol (POP) is an application-layer Internet standard protocol used by local e-mail clients to retrieve e-mail from a remote server over a TCP/IP connection.
-
-he Internet Message Access Protocol (IMAP) is an Internet standard protocol used by e-mail clients to retrieve e-mail messages from a mail server over a TCP/IP connection.
-
-Simple Mail Transfer Protocol (SMTP) is an Internet standard for electronic mail (email) transmission.
-
-## FTP & SSH
-
-The File Transfer Protocol (FTP) is a standard network protocol used for the transfer of computer files between a client and server on a computer network.
-
-Secure Shell (SSH) is a cryptographic network protocol for operating network services securely over an unsecured network. The best known example application is for remote login to computer systems by users.
+An important concept in back end development is the *Application Programming Interface* (**API**), this refers to a set of subroutine definitions, protocols, and tools for building application software. However, in the context of web development, an API is a programmatic interface consisting of one or more publicly exposed endpoints to a defined request–response message system, typically expressed in JSON or XML, which is exposed via the web.
 
 
-## API (Application Programming Interface)
+The concept of an endpoint is tightly related to the concept of a URL, as the later is the usual representation for endpoints for identifying the objects or entities of the API. There is not a universal rule which determines how these URLs should be written, as it depends on the specific design of the API. For example, from an architectural point of view, one principle which determines the way endpoints are design is whether the API is oriented towards *services* (processes/computations) or *resources* (data).
 
-> Is an exposed part of a web application which lets other applications talk to it.
 
-An application programming interface (API) is a set of subroutine definitions, protocols, and tools for building application software.
+An important functionality of an API is managing data, while you can have in-memory data containers to satisfy your data needs, the most reliable and cost effective way to handle any type of information is the *database* (**DB**). Databases come in all shapes and colors, but the most common type of DB are the relational databases. These are structured as tables and relations between them. The most fundamental aspects of databases is that they allow the persistence of data, that is, information that outlives the process that created it.
 
-Is a programmatic interface consisting of one or more publicly exposed endpoints to a defined request–response message system, typically expressed in JSON or XML, which is exposed via the web
 
-## Web Server
+A classic use of a DB is the management of users in a web application, in this case there could be a *users* table in which the columns denote information of users such as the name, the gender, the age, etc. The rows would then correspond to a particular user's record.
 
-> The web server is the part of your web application which actively receives and responds to incoming HTTP requests from browsers or other applications.
-
-A web server is a computer system that processes requests via HTTP.
-
-## Cookies
-
-> Little snippets of text that the web application can drop into your browser's memory when it sends back the web page.
 
 An HTTP cookie (also called web cookie, Internet cookie, browser cookie, or simply cookie) is a small piece of data sent from a website and stored on the user's computer by the user's web browser while the user is browsing.
 
-## SEO (Search Engine Optimization)
 
-> Is making sure your website is very easy for Google and others to crawl so your customers can find their way there.
+# The Website is in the Eye of the Beholder
 
-Search engine optimization (SEO) is the process of affecting the online visibility of a website or a web page in a web search engine's unpaid results—often referred to as "natural", "organic", or "earned" results.
 
-## DESIGN
+- HTML (Hyper Text Markup Language) is the standard markup language for creating web pages and web applications. It constitutes the structure of a web site.
 
-## WYSIWYG (What You See Is What You Get)
+- CSS (Cascading Style Sheets) is the standard language for describing the presentation and visual aspects of a website.
 
-> It means that however you drag and drop items in the editor, they will show up exactly that way in the "real" world version of the thing you're building.
+- JS (JavaScript) is the lingua franca of the web. It handles the behavioral aspects of a website.
 
-A WYSIWYG editor is a system in which content (text and graphics) can be edited in a form closely resembling its appearance when printed or displayed as a finished product,[2] such as a printed document, web page, or slide presentation.
+- AJAX (Asynchronous JavaScript and XML) is a set of front end techniques to create asynchronous web applications, allowing websites to send and retrieve data from a server asynchronously (in the background) without interfering with the display and behavior of the existing page.
 
-## Responsive Design
+- A grid system is a layout paradigm based on containers, rows, and columns used to determine the placement and alignment of content.
 
-> Making your website display well regardless of what size screen or type of device it is viewed on. It "responds" to the browser's specifications.
+- Responsive web design (RWD) is an approach to web design which makes web pages render well on a variety of devices and window or screen sizes. With the advent of mobile phones and tablets, making your website display well regardless of what size screen or type of device it is viewed on is crucial.
 
-Responsive web design (RWD) is an approach to web design which makes web pages render well on a variety of devices and window or screen sizes.
+- Search engine optimization (SEO) is the process of affecting the online visibility of a website or a web page in a web search engine's unpaid results—often referred to as "natural", "organic", or "earned" results. The application of SEO in your web application ensures that your website is very easy for Google to crawl so your intended audience can find their way there.
 
-## Grid System
 
-## RGB, Hex
+# The Tools of the Craft
 
-## GUI (Graphical User Interface)
 
-> Is a generic term for a visual interface where the user can interact with it.
+- A WYSIWYG editor is a system in which content (text and graphics) can be edited in a form closely resembling its appearance when printed or displayed as a finished product,such as a printed document, web page, or slide presentation. The advantage of using these editors is that most of them support a drag-and-drop and clickable configuration paradigm which directly translates to the intended design of a web site.
 
-## Developer tools & Code
+- A text editor is a program specialized in editing plain text. Editors with good support for programming allow the easy manipulation of code.
 
-## Front End & Back End
+- An integrated development environment (IDE) is a program that provides features to computer programmers specifically for software development. An IDE normally consists of a source code editor, build automation tools, a debugger, and intelligent code completion.
 
-## HTML (Hyper Text Markup Language)
-
-> The markup language which specifies the structure of all the pieces of a webpage.
-
-## CSS (Cascading Style Sheets)
-
-> Find HTML tags and tell the browser how to display them.
-
-## JavaScript
-
-> The scripting language used by all browsers.
-
-## AJAX (Asynchronous JavaScript And XML)
-
-> A way of transferring data between the server and web page which doesn't require the user to refresh the page.
-
-## Frameworks
-
-> A generic term for a bunch of code or markup which makes your life easier by writing all the commonly used things for you.
-
-## Version Control
-
-> It's like "save" for your code combined with a time machine so you can go back and see exactly who saved what changes when.
-
-## Git
-
-## Open Source
-
-> Exposing your code to the world so they can use it and help make it better.
-
-> Specifically, you allow other people to do whatever they want with it.
-
-## CMS (Content Management Systems)
-
-## Database
-
-> This is where everything your users do is saved.
+- Browser Developer Tools are a set of web debugging tools built into the browser, providing developers with deep access to the running state of their applications.
