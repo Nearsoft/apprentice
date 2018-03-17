@@ -13,8 +13,7 @@ and is best known as the scripting language for Web pages, but it's used in many
 
 ### Node.js Prompt
 
-To start playing with JavaScript, 
-we need to open up a command line on your computer. 
+To start playing with JavaScript, we need to open up a command line on your computer. 
 You should already know how to do that – you learned it in the [Intro to Command Line chapter](http://test.com).
 
 Once you're ready, follow the instructions below.
@@ -336,22 +335,39 @@ The specific list of "falsy" values in JavaScript is as follows:
 - `false`
 
 Any value that's not on this "falsy" list is "truthy." Here are some examples of those:
-
-    > !!"hello" // We use the double negation sybol to evaluate as a boolean
-    true
-    > !!42
-    true
-    > !!true
-    true
+```
+> !!"hello" // We use the double negation symbol to evaluate as a boolean
+true
+> !!42
+true
+> !!true
+true
+```
 
 ## Arrays
 
-## Objects
+Arrays are container-like values that can hold other values. The values inside an array are called _elements_.
+Arrays are used to store multiple values in a single variable.
 
-## Functions
+The easiest way to create an array is to use an **array literal**, which are the enclosing brackets `[]`.
+Inside the brackets we place the values we want to store inside the array separated by commas.
+
+```javascript
+var cars = ["Toyota", "Chevrolet", "Nissan"];
+```
+
+Array elements don’t all have to be the same type of value. Elements can be any kind of JavaScript value — even other arrays.
+
+```javascript
+var hodgepodge = [100, "paint", false, [2.5, "brush"]];
+```
+
+## Objects
 
 ## Control Structures
 
 ### Conditional (`if-else`)
 
 ### Loop Structures (`while`, `do-while`, `for`, `forEach`)
+
+## Functions
