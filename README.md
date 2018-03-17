@@ -1,3 +1,4 @@
+
 # Nearsoft Apprentice
 
 <p align="center">
@@ -19,22 +20,19 @@ Nearsoft apprentice is a program focused to everyone who wants to learn about so
 
 ## Content
 
-### 1. Objective/How internet works (Feb 09)
+### 1. Objective/How internet works
 * Who we are
 * Apprentice overview
 * Request life cycle
     * Webbrowser
     * HTTP
     * Client/server
-    * DNS/IP
-    * TCP/UDP
     * Protocols
-    * Ports
 * HTTP verbs
 * HTTP code
 
 
-### 2. Terminal (Feb 16)
+### 2. Terminal
 * What's a terminal?
 * Bash
 * Shell
@@ -52,7 +50,7 @@ Nearsoft apprentice is a program focused to everyone who wants to learn about so
 ```
 
 
-### 3. Git (Feb 23)
+### 3. Git
 * Workflow
 * Commands:
     * status
@@ -73,31 +71,48 @@ Nearsoft apprentice is a program focused to everyone who wants to learn about so
 ```
 
 
-### 4. Basic concepts (Mar 02)
-* http://slides.com/cristiancota/basic-concepts#/
+### 4. Basic concepts
 
 
-### 5. HTML (Mar 09)
-* http://slides.com/cristiancota/html-css#/
+### 5. HTML
+* Doctype
+* Tags
+    * Basics
+    * Text formatting
+    * Section divisions
+    * Lists
+    * Tables
+    * Forms
+    * Meta
+    * Script
+    * Link
 
-
-### 6. CSS (Mar 16)
-* http://slides.com/cristiancota/html-css#/
+### 6. CSS
+* Syntax
+* Selector
+* Pseudo Selectors
+    * Pseudo classes
+    * Pseudo elements
+* Box model
+* Styles
 
 ```
 🏁 🎉 Create HTML elements and style them using CSS 🎉 🏁
 ```
 
 
-### 7. Javascript (Mar 23)
+### 7. Javascript
+* Introduction
+* Variables
+* Strings
+* Numbers
+* Loops
+* Arrays
+* Objects
+* Functions
 
-* Javascript Overview
-* 
 
-* Javascripting -> https://www.github.com/sethvincent/javascripting
-
-
-### 8. React (Apr 06)
+### 8. React
 * React overview
 * What's a component?
 * State
@@ -106,7 +121,7 @@ Nearsoft apprentice is a program focused to everyone who wants to learn about so
 * Create application components
 
 
-### 9. Bootstrap (Apr 13)
+### 9. Bootstrap
 * Overview
 * Grids
 * Add classes to components
@@ -116,7 +131,7 @@ Nearsoft apprentice is a program focused to everyone who wants to learn about so
 ```
 
 
-### 10. OOP (Apr 20)
+### 10. OOP
 * Pilars
     * Abstraction
     * Encapsulation
@@ -124,11 +139,13 @@ Nearsoft apprentice is a program focused to everyone who wants to learn about so
     * Polymorphism
 
 
-### 11. Ruby (Apr 27)
-* http://slides.com/carloscontreiras/deck-6
+### 11. Ruby
+    * What's Ruby?
+    * Data types
+    * Syntax
 
 
-### 12. API/Rails (May 04)
+### 12. API/Rails
 * What's an API?
     * Endpoints
 * What's Rails?
@@ -140,7 +157,7 @@ Nearsoft apprentice is a program focused to everyone who wants to learn about so
 * Controller
 
 
-### 13. Rails II (May 11)
+### 13. Rails II
 * Models
 * Active Record
 * Build an endpoint
@@ -151,7 +168,7 @@ Nearsoft apprentice is a program focused to everyone who wants to learn about so
 ```
 
 
-### 14. Redux (May 18)
+### 14. Redux
 * Overview
 * Store
 * Action creator
@@ -162,13 +179,13 @@ Nearsoft apprentice is a program focused to everyone who wants to learn about so
 ```
 
 
-### 15. Testing (May 25)
+### 15. Testing
 * Unit test
 * Integration Testing
 * Continuous Integration
 
 
-### 16. QA (Jun 01)
+### 16. QA
 * White box
 * Black box
 * Terminology
