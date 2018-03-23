@@ -130,7 +130,6 @@ Now we are going to check the tags used to adding some decoration to the text, l
         console.log("Hello world!")
     }
 </pre>
-
 ```
 
 <pre>
@@ -360,6 +359,7 @@ The main tag for this is `form` which will be wrapping every other element. We h
 
 The `input` tag is very versatile, we can change the way it will pass data using the `type` attribute.
 
+```
 <table>
     <tr>
         <td>text</td>
@@ -386,10 +386,9 @@ The `input` tag is very versatile, we can change the way it will pass data using
         <td><input type="submit"></td>
     </tr>
 </table>
+```
 
-We have also the `textarea` which is a similar element to `<input type="text">`:
-
-<textarea></textarea>
+We have also the `textarea` which is a similar element to `<input type="text">`.
 
 And finally we have the `select` which will contain a `option` for every option you can select from the list:
 
@@ -402,14 +401,6 @@ And finally we have the `select` which will contain a `option` for every option 
     <option value="5">Five</option>
 </select>
 ```
-
-<select>
-    <option value="1">One</option>
-    <option value="2">Two</option>
-    <option value="3">Three</option>
-    <option value="4">Four</option>
-    <option value="5">Five</option>
-</select>
 
 You see that `value` attribute there? That's the real value that will be sent, the text inside the `option` tag it's only a display value for the user.
 
