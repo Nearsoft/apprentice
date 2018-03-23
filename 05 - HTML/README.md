@@ -30,7 +30,7 @@ A tag can also contain extra information that will complement the functionality 
 
 This is an **input** tag with a **type** attribute with **file** as value, and will produce this in our browser:
 
-<input type="file">
+![image](https://user-images.githubusercontent.com/8913918/37851056-b3c4b52e-2e9a-11e8-8d17-3f42a671c520.png)
 
 Not all tags accept the same attributes but there are some globals, such as `style`, `class`, `id`, etc.
 
@@ -53,6 +53,10 @@ This is the basic structure of a website and everyone of them must have it, let'
 The first tag you can see there is the `html` (let's hold on the DOCTYPE one, will explain it a bit further). This tag is telling to the broswer that this is an html file, and is expecting a couple of tags inside: `head` and `body`.
 
 All inside the `head` tag will not be visible in the display window of the browser. The elements and tags added there will have other purpouses, such as call for external resources as CSS documents, fonts and libraries. Also can contain the path for our favicon, the title of our site, and the image that will appear when sharing a link into a social network, also can contain a description visible for search engines and other uses, but these are the main ones.
+
+For example, by putting the URL https://nearsoft.com
+
+![image](https://user-images.githubusercontent.com/8913918/37851054-b074ea56-2e9a-11e8-9203-d2c1493a637f.png)
 
 Now, all that's inside the `body` tag will be our "visible" part of the site and this is where we are going to be focused.
 
@@ -433,4 +437,4 @@ Twitter uses it's own too:
 
 As summary you must know now that HTML in the skeleton for our website, and will help you to display the information that you want in several ways, inserting graphics, tables, lists, paragraphs, etc. and also you can define the divisions of the layouts inside your html file.
 
-There are a lot of tag we didn't see throughout this chapter, such as `style` tag that you can use to write some style rules, also `script` which let you to include JavaScript code in your website, `video` to insert a video to your site, etc. but you now know the basis and you can move forward to play with them, try new ones, improve with the ones we just saw and start building your websites!
+There are a lot of tag we didn't see throughout this chapter, such as the `style` tag you can use to write your style rules in your site, also `script` which let you to include JavaScript code in your website, `video` to insert a video to your site, etc. but you now know the basis and you can move forward to play with them, try new ones, improve with the ones we just saw and start building your websites!
