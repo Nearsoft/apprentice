@@ -360,32 +360,12 @@ The main tag for this is `form` which will be wrapping every other element. We h
 The `input` tag is very versatile, we can change the way it will pass data using the `type` attribute.
 
 ```
-<table>
-    <tr>
-        <td>text</td>
-        <td><input type="text"></td>
-    </tr>
-    <tr>
-        <td>password</td>
-        <td><input type="password"></td>
-    </tr>
-    <tr>
-        <td>file</td>
-        <td><input type="file"></td>
-    </tr>
-    <tr>
-        <td>checkbox</td>
-        <td><input type="checkbox"></td>
-    </tr>
-    <tr>
-        <td>radio</td>
-        <td><input type="radio"></td>
-    </tr>
-    <tr>
-        <td>submit</td>
-        <td><input type="submit"></td>
-    </tr>
-</table>
+<input type="text">
+<input type="password">
+<input type="file">
+<input type="checkbox">
+<input type="radio">
+<input type="submit">
 ```
 
 We have also the `textarea` which is a similar element to `<input type="text">`.
