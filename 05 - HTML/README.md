@@ -8,13 +8,13 @@ Let's leave something clear first: HTML it's not a programming language, HTML it
 
 As we said in previous topics, all in the internet are files. At the end, every website is an html file or a group of files, so if you want to start creating your own, open your favorite text editor and create a file with extension `.html`. For convention, the main page of your site should be called `index.html`.
 
-HTML uses tags in order to markup text and create elements this way. A tag, generally has a beginning and an ending, and receive the name of *Paired tags*. This is the syntax for the root tag:
+HTML uses tags in order to markup text and create elements. A tag, generally has a beginning and an end, and receive the name of *Paired tags*. This is the syntax for the root tag:
 
 ```
 <html></html>
 ```
 
-We must have clear that not all the tags will have the same structure, there are other tags where the element are not going to have end, just because they are not marking up any text or other elements, these are only elements that will be inserted into the page and tags receive the name of *Single tags*. The syntax of these are similar to this one:
+We must have clear that not all the tags will have the same structure, there are other elements that don't have closing tags, just because they are not marking up any text or other elements, these are just elements that will be inserted into the page and tags receive the name of *Single tags*. The syntax of these are similar to this one:
 
 ```
 <img>
