@@ -30,9 +30,11 @@ A tag can also contain extra information that will complement the functionality 
 
 This is an **input** tag with a **type** attribute with **file** as value, and will produce this in our browser:
 
-![image](https://user-images.githubusercontent.com/8913918/37851056-b3c4b52e-2e9a-11e8-8d17-3f42a671c520.png)
+<p align="center">
+<img width="250" align="center" src="https://user-images.githubusercontent.com/8913918/37851056-b3c4b52e-2e9a-11e8-8d17-3f42a671c520.png">
+</p>
 
-Not all tags accept the same attributes but there are some globals, such as `style`, `class`, `id`, etc.
+Not all tags accept the same attributes but there are some globals, such as `style`, `class`, `id`, etc. And not all attributes need a value, just by adding the name attribute to the tags will affect the element.
 
 Let's open our html file and write the following:
 
@@ -56,7 +58,9 @@ All inside the `head` tag will not be visible in the display window of the brows
 
 For example, putting the URL https://nearsoft.com as a status on my Facebook will cause this:
 
-![image](https://user-images.githubusercontent.com/8913918/37851054-b074ea56-2e9a-11e8-9203-d2c1493a637f.png)
+<p align="center">
+<img width="500" align="center" src="https://user-images.githubusercontent.com/8913918/37851054-b074ea56-2e9a-11e8-9203-d2c1493a637f.png">
+</p>
 
 Now, all that's inside the `body` tag will be our "visible" part of the site and this is where we are going to be focused.
 
@@ -66,7 +70,9 @@ Now let's back to the `<!DOCTYPE html>` one, this one must be on the first line 
 
 There's an organization called [ **The World Wide Web Consortium (W3C)**](https://www.w3.org/Consortium/) who is in charge to create the standards for HTML tags that we use and the rules that web browsers must follow at the time to rendering them. Let's take as example the `h1` tag, which is the one that we use for giving a main title to our site. With the help of dev tools from Google Chrome I am able to se what are the rules for that tag by default.
 
-![image](https://user-images.githubusercontent.com/8913918/37851038-a6e2bc98-2e9a-11e8-8a0e-f545b295f095.png)
+<p align="center">
+<img width="500" align="center" src="https://user-images.githubusercontent.com/8913918/37851038-a6e2bc98-2e9a-11e8-8a0e-f545b295f095.png">
+</p>
 
 We can override these styles adding your rules, but let's wait for the CSS course to do that.
 
