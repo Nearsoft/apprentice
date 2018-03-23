@@ -89,15 +89,6 @@ Heading tags are used to display the headings and titles, we have 6 tags for thi
 <h6>Heading 6</h6>
 ```
 
-Will produce:
-
-<h1>Heading 1</h1>
-<h2>Heading 2</h2>
-<h3>Heading 3</h3>
-<h4>Heading 4</h4>
-<h5>Heading 5</h5>
-<h6>Heading 6</h6>
-
 Following with text tags we have the `p` tag that will define a paragraph, producing a block element, meaning that if you have two paragraph elements, then the first one will be on top of the second one.
 
 ```
