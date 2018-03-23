@@ -54,7 +54,7 @@ The first tag you can see there is the `html` (let's hold on the DOCTYPE one, wi
 
 All inside the `head` tag will not be visible in the display window of the browser. The elements and tags added there will have other purpouses, such as call for external resources as CSS documents, fonts and libraries. Also can contain the path for our favicon, the title of our site, and the image that will appear when sharing a link into a social network, also can contain a description visible for search engines and other uses, but these are the main ones.
 
-For example, by putting the URL https://nearsoft.com
+For example, putting the URL https://nearsoft.com as a status on my Facebook will cause this:
 
 ![image](https://user-images.githubusercontent.com/8913918/37851054-b074ea56-2e9a-11e8-9203-d2c1493a637f.png)
 
@@ -66,7 +66,7 @@ Now let's back to the `<!DOCTYPE html>` one, this one must be on the first line 
 
 There's an organization called [ **The World Wide Web Consortium (W3C)**](https://www.w3.org/Consortium/) who is in charge to create the standards for HTML tags that we use and the rules that web browsers must follow at the time to rendering them. Let's take as example the `h1` tag, which is the one that we use for giving a main title to our site. With the help of dev tools from Google Chrome I am able to se what are the rules for that tag by default.
 
-SCREENSHOT CON ESTILOS DE H1
+![image](https://user-images.githubusercontent.com/8913918/37851038-a6e2bc98-2e9a-11e8-8a0e-f545b295f095.png)
 
 We can override these styles adding your rules, but let's wait for the CSS course to do that.
 
