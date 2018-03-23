@@ -22,7 +22,7 @@ We must have clear that not all the tags will have the same structure, there are
 
 A bit further we will teach you other tags and how to use them, for now just remember that everything inside the tag, in case of being a paired tag, is being affected by the function of the tag.
 
-A tag can also contain extra information that will complement the functionality of the tag sometimes changing the way the element looks or it's behavior. This data receive the name of *atributte* and this is the way it looks:
+A tag can also contain extra information that will complement the functionality of the tag, sometimes changing the way the element looks or it's behavior. This data receive the name of *atributte* and this is the way it looks:
 
 ```
 <input type="file">
@@ -52,7 +52,7 @@ Let's open our html file and write the following:
 
 This is the basic structure of a website and everyone of them must have it, let's explain step by step:
 
-The first tag you can see there is the `html` (let's hold on the DOCTYPE one, will explain it a bit further). This tag is telling to the broswer that this is an html file, and is expecting a couple of tags inside: `head` and `body`.
+The first tag you can see there is the `html` (let's hold on the DOCTYPE one, will explain it a bit further). This tag is telling to the browser that this is an html file, and is expecting a couple of tags inside: `head` and `body`.
 
 All inside the `head` tag will not be visible in the display window of the browser. The elements and tags added there will have other purpouses, such as call for external resources as CSS documents, fonts and libraries. Also can contain the path for our favicon, the title of our site, and the image that will appear when sharing a link into a social network, also can contain a description visible for search engines and other uses, but these are the main ones.
 
@@ -66,9 +66,9 @@ Now, all that's inside the `body` tag will be our "visible" part of the site and
 
 Having this basic structure in a document with html extension we are giving the first step to create our website.
 
-Now let's back to the `<!DOCTYPE html>` one, this one must be on the first line of your document. This tag is teeling to our web broswer the type of document is about to read and to apply some standardization rules to determine what to do with the next lines. If you miss including this tag, the broswer will open normally your html file and parsing it, but can cause some strange behaviors with our elements, not having some functions or not doing the right ones in the time your site is opened in a different broswer.
+Now let's back to the `<!DOCTYPE html>` one, this one must be on the first line of your document. This tag is teeling to our web browser the type of document is about to read and to apply some standardization rules to determine what to do with the next lines. If you miss including this tag, the browser will open normally your html file and parsing it, but can cause some strange behaviors with our elements, not having some functions or not doing the right ones in the time your site is opened in a different browser.
 
-There's an organization called [ **The World Wide Web Consortium (W3C)**](https://www.w3.org/Consortium/) who is in charge to create the standards for HTML tags that we use and the rules that web browsers must follow at the time to rendering them. Let's take as example the `h1` tag, which is the one that we use for giving a main title to our site. With the help of dev tools from Google Chrome I am able to se what are the rules for that tag by default.
+There's an organization called [ **The World Wide Web Consortium (W3C)**](https://www.w3.org/Consortium/) who is in charge to create the standards for HTML tags that we use and the rules that web browsers must follow at the time to rendering them. Let's take as example the `h1` tag, which is the one that we use for giving a the main heading to our site. With the help of dev tools from Google Chrome I am able to se what are the rules for that tag by default.
 
 <p align="center">
 <img width="500" align="center" src="https://user-images.githubusercontent.com/8913918/37851038-a6e2bc98-2e9a-11e8-8a0e-f545b295f095.png">
@@ -143,13 +143,13 @@ Now we are going to check the tags used to adding some decoration to the text, l
 
 ## Divisions
 
-Now we are going to see one of the most used, the `div` tag. This define a division of your site, that's it. Pretty much easy to understand. If you start thinking about any website you should be able to start recognizing how is divided.
+Now we are going to see one of the most used tags, the `div`. This define a division of your site, that's it. Pretty easy to understand. If you start thinking about any website you should be able to start recognizing how is divided.
 
-You will be wrapping elements inside a `div` tag and together will give the structure to the view. With some practice you will be able to determine whether or not using a `div`.
+You will be wrapping elements inside a `div` tag and together will give the structure to the view. With some practice you will be able to determine whether or not to use a `div`.
 
 ## Lists
 
-Lists are a element very used in the web applications, there are two types of lists, the ordered ones `ol` and unordered lists `ul`. This tags will define a list, but you need to include some list items `li` in order to create a list.
+Lists are elements very used in web applications, there are two types of lists, the ordered ones `ol` and unordered lists `ul`. This tags will define a list, but you need to include some list items `li` in order to create a list.
 
 Let's start with unordered lists:
 
@@ -226,7 +226,7 @@ Let's check a last type of list, the **Definition lists**:
 
 Tables are elements to display tabulated data only. Some years ago, web developers used this tag to give structure to their websites, which was not strictly wrong because in that time you always browsed through the internet using your PC and it was enough. Now we have tablets, smartphones and a lot of resolutions that we need to support and this is not an option anymore.
 
-The `table` tag uses several tags inside, such as `thead`, `tbody`, `th`, `tr` and `td`. `thead` is used to create a header for the table, like adding a title for every column, inside `tbody` we will display all the data we have. `tr` stands for **table row**, which indicate a row for the table and `td` means **table data** and goes inside the `tr`.
+The `table` tag uses several tags inside, such as `thead`, `tbody`, `th`, `tr` and `td`. `thead` is used to create a header for the table, like adding a title for every column, inside `tbody` we will display all the data we have. `tr` stands for **table row**, which indicates a row for the table and `td` means **table data** and goes inside the `tr`.
 
 ```<table>
     <thead>
@@ -352,9 +352,9 @@ You can also merge columns or rows using the `colspan` and `rowspan` attributes:
 
 ## Forms
 
-Forms are one of the most important elements in web applications, these are the way that users can interact with the data, by creating, updating or even deleting data from their records. In social networks are the way you post status, upload your photos, create an account, do log in into the application, etc.
+Forms are one of the most important elements in web applications, these are the way that users can interact with the data, by creating, updating or even deleting data from their records. In social networks that's the way you post a status, upload your photos, create an account, do log in into the application, etc.
 
-Knowing only HTML will be useless to make forms to be working, this will only create a space to write information or hold a path for a file, do selections, etc.
+Knowing only HTML will be useless to make working forms, this will only create a space to write information or hold a path for a file, do selections, etc.
 
 The main tag for this is `form` which will be wrapping every other element. We have the `input`, `textarea` and `select` tags here.
 
@@ -393,13 +393,13 @@ The `link` tag will help you to import external resources to your site. This wil
 <link href="resource.path">
 ```
 
-Adding comments to the HTML code is useful to explain others what are you doing or probably explaining why you take that approach. To add comments you need the following syntax:
+Adding comments to the HTML code is useful to explain others what you are doing or probably explaining why you take that approach. To add comments you need the following syntax:
 
 ```
 <!-- Comment here -->
 ```
 
-And last but not least the `meta` tag. This generally will have a couple of attributes: `name` and `content`. The `meta` tag is usually used several times with different values. Here you can define keywords, description, author, etc. from the your website.
+And last but not least the `meta` tag. This generally will have a couple of attributes: `name` and `content`. The `meta` tag is usually used several times with different values. Here you can define keywords, description, author, etc. from your website.
 
 This is the way you do:
 
@@ -432,6 +432,6 @@ Twitter uses it's own too:
 <meta name="twitter:image" content="">
 ```
 
-As summary you must know now that HTML in the skeleton for our website, and will help you to display the information that you want in several ways, inserting graphics, tables, lists, paragraphs, etc. and also you can define the divisions of the layouts inside your html file.
+As summary you must know now that HTML is the skeleton for our website, and will help you to display the information that you want in several ways, inserting graphics, tables, lists, paragraphs, etc. and also you can define the divisions of the layouts inside your html file.
 
-There are a lot of tag we didn't see throughout this chapter, such as the `style` tag you can use to write your style rules in your site, also `script` which let you to include JavaScript code in your website, `video` to insert a video to your site, etc. but you now know the basis and you can move forward to play with them, try new ones, improve with the ones we just saw and start building your websites!
+There are a lot of tag we didn't see throughout this chapter, such as the `style` tag you can use to write your style rules in your site, also `script` which let you include JavaScript code in your website, `video` to insert a video to your site, etc. but you now know the basis and you can move forward to play with them, try new ones, improve with the ones we just saw and start building your websites!
