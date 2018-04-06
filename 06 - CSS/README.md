@@ -157,4 +157,54 @@ div {
 
 Which background color will the div have?
 
-As we have reviewed, you can add the style rules in a lot of places: in the same file using the `style` tag, with the `style` attribute, in a separated `css` file, using the tag name as selector, the class or id, etc. and at the end, only one style will be applied.
+As we have reviewed, you can add the style rules in several places: in the same file using the `style` tag, with the `style` attribute, in a separated `css` file, using the tag name as selector, the class or id, etc. and at the end, only one style will be applied.
+
+The first thing you need to know is that the last rule in the file is the one that will be applied. In the next scenario, you have 2 rules for the same selector. The color blue applied first, and then the color green is applied, so at the end your divs will have the green background color.
+
+```css
+div {
+    background-color: blue;
+}
+
+div {
+    background-color: green;
+}
+```
+
+Calling by tag name, class, id or attribute also have different levels of importance. The one with less importance is the tag name and the most important is the id.
+
+```css
+#my-box {
+    background-color: green;
+}
+
+[class]{
+    background-color: yellow;
+}
+
+.box {
+    background-color: green;
+}
+
+div {
+    background-color: blue;
+}
+```
+
+Even though the blue color is placed at the end, the tag name selector is the less specific for the browser as the ones above.
+
+The interesting part begins here. You can be more specific by defining the element inside other element:
+
+```css
+div p {
+    color: red;
+}
+
+p {
+    color: red;
+}
+```
+
+`div p` is more specific than `p`, but using a single class selector is even more specific.
+
+You can start thinking on how many combinations you can have to add styles to your elements. That's why it's very important to use only classes for CSS and be specific only when it's needed. A lot of time can be saved when you are creating your website if you know about the specificity rules.
