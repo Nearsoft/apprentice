@@ -80,3 +80,25 @@ body {
 The three examples above are doing the exact same thing.
 
 Now that you know how to write CSS and how to include into your HTML document, let's continue with some of the most important styles you need to know:
+
+### Display
+
+This property is one of the most important to understand because this describe the way the element and the elements around are going to be behave in your website. You have several options to choose on this one: block, inline, flex, table, list-item, table, grid, none, etc.
+
+Let's focus on the main two possibles values we have: *inline* and *block*. Elements such as button, input, select, textarea, a, img, b and i are displayed as inline elements by default. And p, h1, h2, h3, h4, h5, h6, ol, ul, div and form are elements displayed as block.
+
+![https://i.pinimg.com/originals/9f/cc/f3/9fccf3e0600ac806e52d73cce33c3d06.png](https://i.pinimg.com/originals/9f/cc/f3/9fccf3e0600ac806e52d73cce33c3d06.png)
+
+You can intuit that `li` elements have *list-item* as display value or `tr` have *table-row* value and so on. But there is a new display value: *flex* that became pretty popular in the last years. This is a pretty nice method to create great websites without a lot of code and it allows you to handle elements inside a flex container in a particular way.
+
+If you want to learn more about it, you can learn by playing the game Flexbox Froggy: https://flexboxfroggy.com/
+
+### Position
+
+This property let's you define how an element will behave
+
+## Selectors
+
+There are infinite number of selectors you can define. 
+
+## Specificity
