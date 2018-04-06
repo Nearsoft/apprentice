@@ -6,7 +6,7 @@ To get started with CSS we need to know what a selector is and we are going to d
 
 The basic syntax for CSS is pretty simple:
 
-```
+```css
 selector {
     property: value;
     property-two: value;
@@ -15,7 +15,7 @@ selector {
 
 For example the following CSS code is telling to the browser to put in black the background of the body element:
 
-```
+```css
 body {
     background: black;
 }
@@ -23,7 +23,7 @@ body {
 
 There are several ways to add styles to your elements. The first is adding the `style` attribute to the tag and specifying one or more rules as value.
 
-```
+```html
 <body style="background:black; color:white;"></body>
 ```
 
@@ -31,7 +31,7 @@ It's not recommended to add your styles this way because usually you need a lot 
 
 There's another way to have your styles in the same HTML file: using the `style` tag. This tag will let you write CSS in a special block for between your HTML tags. A common place to put this tag is inside the `head` of your document, but this can be added in any place of your document and can be used more than one time.
 
-```
+```html
 <!DOCTYPE html>
 <html>
     <head>
@@ -55,7 +55,7 @@ Finally the last and recommended method to include your CSS is creating a file w
 
 index.html
 
-```
+```html
 <!DOCTYPE html>
 <html>
     <head>
@@ -70,7 +70,7 @@ index.html
 
 style.css
 
-```
+```css
 body {
     background: black;
     color: white;
