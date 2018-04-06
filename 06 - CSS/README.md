@@ -157,4 +157,4 @@ div {
 
 Which background color will the div have?
 
->! Spoiler
+> ! <- still a spoiler
