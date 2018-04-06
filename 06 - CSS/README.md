@@ -93,12 +93,68 @@ You can intuit that `li` elements have *list-item* as display value or `tr` have
 
 If you want to learn more about it, you can learn by playing the game Flexbox Froggy: https://flexboxfroggy.com/
 
-### Position
-
-This property let's you define how an element will behave
-
 ## Selectors
 
-There are infinite number of selectors you can define. 
+Selectors let you select the element or elements you want to apply the style. They can be the tag name as examples above. When you use the tag selector your are going to select all the elements that exists in the document.
+
+The best way to add styles to an element is including a class name to the tag and then using that name in the CSS file, for example:
+
+```html
+<div class="container">
+    ...
+</div>
+```
+
+```css
+.container {
+    width: 100%;
+}
+```
+
+This way you are being specific enough to add style to the element without affecting all divs that could exist in the document.
+
+And there is a similar way to add styles to the elements, but with the `id` attribute, and instead using the dot before the class name we are going to use the hash (#) symbol along with the id of the element. This is not recommended to use with CSS because there shouldn't be repeated id's on the same page, and the best practice is to have generic CSS rules and using the id goes against this.
+
+Also you can select elements by attributes. For example, the way to select all the elements with the id attribute is: `[id]`. We can narrow this selector to only divs with id attribute using: `div[id]`, and we can be more specific, for example to select all inputs with type text, the selector will be: `input[type=text]`.
+
+There are a lot more selectors you can find in the following table: https://www.w3schools.com/cssref/css_selectors.asp
+
+Selectors are used by JavaScript too, so it's important for you to know them pretty well.
 
 ## Specificity
+
+Imagine you have this HTML and CSS code.
+
+index.html
+```html
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="box" style="background:red;" id="the-box">
+            ...
+        </div>
+    </body>
+</html>
+```
+
+style.css
+```css
+#the-box{
+    background-color: pink;
+}
+
+.box {
+    background-color: blue;
+}
+
+div {
+    background-color: green;
+}
+```
+
+Which background color will the div have?
+
+>! Spoiler
