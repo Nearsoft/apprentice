@@ -157,4 +157,4 @@ div {
 
 Which background color will the div have?
 
-> ! <- still a spoiler
+As we have reviewed, you can add the style rules in a lot of places: in the same file using the `style` tag, with the `style` attribute, in a separated `css` file, using the tag name as selector, the class or id, etc. and at the end, only one style will be applied.
