@@ -1,6 +1,4 @@
----
-title: Basic Concepts
----
+# Basic Concepts
 
 
 The world of web development orbits around a galaxy of interconnected concepts, techniques, and technologies which are constantly evolving. This can sometimes hinder the ability of newcomers to learn and practice the craft effectively.
