@@ -113,7 +113,7 @@ As we have mentioned in past chapters, the best way is to have our code separate
 
 ### Events
 
-You can add listeners to your elements to execute some part of code when certain event happens.
+You can add listeners to your elements to execute some part of code when certain event happens. These are some of the most common events that exist:
 
 <table>
     <tr>
@@ -141,3 +141,158 @@ You can add listeners to your elements to execute some part of code when certain
         <td>The browser has finished loading the page</td>
     </tr>
 </table>
+
+The most basic way to add events to your elements is via attribute and in the value you put the code that you want to be executed:
+
+```html
+<button onclick="alert('hola')">Click me!</button>
+```
+
+In this case we will show an alert on the browser when we click on the button. Remember the JavaScript functions? Here's a great place to use them, just put the function name as value that you have defined on your script and this will be executed when the element suffer the event.
+
+You can make pretty interesting things, like inserting new elements on your website when clicking a button or make them disappear, change completely the way they look like and everything you want! You have total control of your DOM using JavaScript.
+
+```html
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            div {
+                width: 50px;
+                height: 50px;
+                display: inline-block;
+            }
+        </style>
+    </head>
+    <body>
+        <button onclick="drawDiv()">Click me!</button>
+
+        <script>
+        var body = document.body;
+        function drawDiv(){
+            var div = document.createElement('div')
+            div.style.background = generateColor();
+            body.appendChild(div);
+        }
+        function generateColor(){
+            return 'rgb(' + Math.floor(Math.random()*255) + ',' +
+                    Math.floor(Math.random()*255) + ',' +
+                    Math.floor(Math.random()*255) + ')';
+        }
+        </script>
+    </body>
+</html>
+```
+
+And combining the css transitions with JavaScript you can do pretty cool things:
+
+```html
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        #box {
+            transition: height 1s;
+            width: 500px;
+            height: 500px;
+            background: red;
+        }
+        </style>
+    </head>
+    <body>
+
+        <div id="box"></div>
+
+        <button id="show">Show</button>
+        <button id="hide">Hide</button>
+
+        <script>
+        var box = document.getElementById("box");
+
+        document.getElementById("show").addEventListener("click", function() {
+            box.style.height = '500px';
+        });
+
+        document.getElementById("hide").addEventListener("click", function() {
+            box.style.height = '0';
+        });
+
+        </script>
+    </body>
+</html>
+```
+
+
+
+```html
+<html>
+    <head>
+        <style>
+            .book{
+                display: inline-block;
+                width: 200px;
+                height: 300px;
+                border: 1px solid black;
+                border-radius: 3px;
+                margin: 10px;
+                overflow: auto;
+                font-family: sans-serif;
+                padding: 10px;
+            }
+
+            .book h3{
+                text-align: center;
+            }
+
+            .author{
+                text-align: right;
+            }
+        </style>
+    </head>
+    <body id="app">
+        <script type="text/javascript" src="hola.js"></script>
+    </body>
+</html>
+```
+
+```js
+var app = document.getElementById('app');
+
+var books = [
+    {
+        "isbn": "9781593275846",
+        "title": "Eloquent JavaScript, Second Edition",
+        "subtitle": "A Modern Introduction to Programming",
+        "author": "Marijn Haverbeke",
+        "published": "2014-12-14T00:00:00.000Z",
+        "publisher": "No Starch Press",
+        "pages": 472,
+        "description": "JavaScript lies at the heart of almost every modern web application, from social apps to the newest browser-based games. Though simple for beginners to pick up and play with, JavaScript is a flexible, complex language that you can use to build full-scale applications.",
+        "website": "http://eloquentjavascript.net/"
+    },
+    {
+        "isbn": "9781449331818",
+        "title": "Learning JavaScript Design Patterns",
+        "subtitle": "A JavaScript and jQuery Developer's Guide",
+        "author": "Addy Osmani",
+        "published": "2012-07-01T00:00:00.000Z",
+        "publisher": "O'Reilly Media",
+        "pages": 254,
+        "description": "With Learning JavaScript Design Patterns, you'll learn how to write beautiful, structured, and maintainable JavaScript by applying classical and modern design patterns to the language. If you want to keep your code efficient, more manageable, and up-to-date with the latest best practices, this book is for you.",
+        "website": "http://www.addyosmani.com/resources/essentialjsdesignpatterns/book/"
+    }
+];
+
+books.forEach(function(element){
+    app.innerHTML +=
+        '<div class="book" onclick="visit(\''+element.website+'\')">' +
+            '<h3>' + element.title + '</h3>' +
+            '<p class="description">' + element.description + '</p>' +
+            '<p class="author">' + element.author + '</p>' +
+        '</div>';
+});
+
+function visit(link){
+    window.open(link, '_blank');
+}
+```

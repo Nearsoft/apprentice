@@ -1,24 +1,28 @@
 <html>
     <head>
+        <style>
+            .book{
+                display: inline-block;
+                width: 200px;
+                height: 300px;
+                border: 1px solid black;
+                border-radius: 3px;
+                margin: 10px;
+                overflow: auto;
+                font-family: sans-serif;
+                padding: 10px;
+            }
+
+            .book h3{
+                text-align: center;
+            }
+
+            .author{
+                text-align: right;
+            }
+        </style>
     </head>
     <body id="app">
-
-        <input type="text" id="my-input">
-        <div id="box"></div>
-
-        <script type="text/javascript">
-            document.getElementById("app").innerHTML += "<h1>Hello World!</h1>";
-            document.getElementById("my-input").type = "checkbox";
-            document.getElementById("box").style.background = "black";
-            document.getElementById("box").style.width = "100px";
-            document.getElementById("box").style.height = "100px";
-        </script>
+        <script type="text/javascript" src="hola.js"></script>
     </body>
 </html>
-
-
-
-
-var a = document.createElement("p");
-a.innerHTML = "Que pedo";
-document.getElementById("app").appendChild(a);
