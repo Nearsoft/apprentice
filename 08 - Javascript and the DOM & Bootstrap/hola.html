@@ -1,13 +1,24 @@
-
 <html>
     <head>
     </head>
-    <body id="demo">
+    <body id="app">
 
-        Hey!
+        <input type="text" id="my-input">
+        <div id="box"></div>
 
         <script type="text/javascript">
-            document.getElementById("demo").innerHTML += "Hello World!";
+            document.getElementById("app").innerHTML += "<h1>Hello World!</h1>";
+            document.getElementById("my-input").type = "checkbox";
+            document.getElementById("box").style.background = "black";
+            document.getElementById("box").style.width = "100px";
+            document.getElementById("box").style.height = "100px";
         </script>
     </body>
 </html>
+
+
+
+
+var a = document.createElement("p");
+a.innerHTML = "Que pedo";
+document.getElementById("app").appendChild(a);
