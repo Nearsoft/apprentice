@@ -71,12 +71,6 @@ This assures me that I will have always 2 and 3 columns in all devices. But what
 
 Do you remember the table above with the breakpoints? Well, for specify rules per every device you need to add some suffix to the columns classes:
 
-Extra small: -xs
-Small: -sm
-Medium: -md
-Large: -lg
-Extra large: -xl
-
 <table>
     <tr>
         <td><576px</td>
