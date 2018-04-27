@@ -45,11 +45,6 @@ With bootstrap we have some breakpoints, which means that we can define rules fo
     </tr>
 </table>
 
-
-
-
-
-
 The main element need to know is the `container`. This is the most basic and the main to start our layout using the grid system. There are a couple of containers: the normal container and the container-fluid. The normal container will wrap you elements with margins on both sides, while the container-fluid covers the entire window.
 
 ![](http://www.codescratcher.com/wp-content/uploads/2015/03/Fixed-and-Fluid-Layout-in-Bootstrap-Output.gif)
@@ -81,6 +76,34 @@ Small: -sm
 Medium: -md
 Large: -lg
 Extra large: -xl
+
+<table>
+    <tr>
+        <td><576px</td>
+        <td>Extra small</td>
+        <td>-xs</td>
+    </tr>
+    <tr>
+        <td>≥576px</td>
+        <td>Small</td>
+        <td>-sm</td>
+    </tr>
+    <tr>
+        <td>≥768px</td>
+        <td>Medium</td>
+        <td>-md</td>
+    </tr>
+    <tr>
+        <td>≥992px</td>
+        <td>Large</td>
+        <td>-lg</td>
+    </tr>
+    <tr>
+        <td>≥1200px</td>
+        <td>Extra large</td>
+        <td>-xl</td>
+    </tr>
+</table>
 
 And the grid system is based on a twelve columns layout, so you need to specify how wide will the column be using that numbers. In our case, as we want to display one column per row when is on extra small devices and out of that we will display as two columns in the same row we need to add the classes `col-xs-12` and `col-sm-6` to the column. And for the second row, we want to display one column per row when it's xs and three column per row out of that wide, then we add the classes: `col-xs-12` and `col-sm-4` to every column in the second row.
 
