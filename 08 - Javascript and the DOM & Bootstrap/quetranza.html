@@ -1,33 +1,15 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <style>
-        #box {
-            transition: height 1s;
-            width: 500px;
-            height: 500px;
-            background: red;
+<head>
+</head>
+<body>
+    <input type="text" onkeypress="validateNumberOnly(event);">
+    <script>
+    function validateNumberOnly(event) {
+        if ((event.keyCode < 48 || event.keyCode > 57)) {
+            event.returnValue = false;
         }
-        </style>
-    </head>
-    <body>
-
-        <div id="box"></div>
-
-        <button id="show">Show</button>
-        <button id="hide">Hide</button>
-
-        <script>
-        var box = document.getElementById("box");
-
-        document.getElementById("show").addEventListener("click", function() {
-            box.style.height = '500px';
-        });
-
-        document.getElementById("hide").addEventListener("click", function() {
-            box.style.height = '0';
-        });
-
-        </script>
-    </body>
+    }
+    </script>
+</body>
 </html>

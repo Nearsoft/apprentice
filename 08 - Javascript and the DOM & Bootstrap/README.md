@@ -1,6 +1,28 @@
+# Bootstrap
+
+[Bootstrap](https://getbootstrap.com/) is one of many frameworks you can use to build your applications. Using one of this frameworks will allow you to be more effective when you are creating a website. On this part of the course we will focus on the part of doing layouts, which is one of the most complex things to do at first when you are learning to develop websites.
+
+Bootstrap is currently in the version 4.1.0 and this is the version we will be using. The first thing you need to know of this framework is that you can see this as a couple of files: a css and a js file, where there are already written a lot of css rules you can use with the usage of classes and also there are some components already created, ready to be used and interact with them with minimal or sometimes none code.
+
+As we mention before, we will go over the layout part, which means that we only going to need the css file. To start using bootstrap let's import the css file into our html file. We don't need to download the file, we are going to use a CDN (Content Delivery Network) and just put the link to that file in our code:
+
+```html
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    </head>
+    <body>
+
+    </body>
+</html>
+```
+
+And we are ready to begin with this!
+
 # Javascript and DOM
 
-In the previous chapter you learned the basics of JavaScript and you probably were thinking while you were reading: Why JavaScript? Well the reason is that this is the only language that runs on the browser and that means you can interact with the DOM using JavaScript.
+In the previous chapter you learned the basics of JavaScript and you probably were thinking while you were reading: Why JavaScript instead other programming languages? Well the reason is that JavaScript is the only language that runs on the browser and that means you can interact with the DOM using it.
 
 What's the DOM? When the browser loads your website, this create the Document Object Model of your code. The DOM is the model that represents the the page as nodes and objects.
 
@@ -217,6 +239,26 @@ And combining the css transitions with JavaScript you can do pretty cool things:
             box.style.height = '0';
         });
 
+        </script>
+    </body>
+</html>
+```
+
+Validations are done via JavaScript, this is an example using the onkeypress event, which will read the key number of the char that user has pressed and check for the key, if charKey is in range of number, will do nothing letting the user to type as normal in the text input. In the case that keyCode is out of the range of numbers, then will prevent that this character is typed
+
+```html
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <input type="text" onkeypress="validateNumberOnly(event)">
+        <script>
+        function validateNumberOnly(event) {
+            if ((event.keyCode < 48 || event.keyCode > 57)) {
+                event.returnValue = false;
+            }
+        }
         </script>
     </body>
 </html>
