@@ -105,7 +105,7 @@ We are going to review three:
 </html>
 ```
 
-As we have mentioned in past chapters, the best way is to have our code separated, so the recommended way is to create a new file with `.js` extension and call from your html this way:
+As we have mentioned in past chapters, the best way is to have our code separated, so we recommend to create a new file with `.js` extension and call from your html this way:
 
 ```html
 <script src="js/script.js"></script>
@@ -114,3 +114,32 @@ As we have mentioned in past chapters, the best way is to have our code separate
 ### Events
 
 You can add listeners to your elements to execute some part of code when certain event happens.
+
+```html
+<table>
+    <tr>
+        <td>onchange</td>
+        <td>An HTML element has been changed</td>
+    </tr>
+    <tr>
+        <td>onclick</td>
+        <td>The user clicks an HTML element</td>
+    </tr>
+    <tr>
+        <td>onmouseover</td>
+        <td>The user moves the mouse over an HTML element</td>
+    </tr>
+    <tr>
+        <td>onmouseout</td>
+        <td>The user moves the mouse away from an HTML element</td>
+    </tr>
+    <tr>
+        <td>onkeydown</td>
+        <td>The user pushes a keyboard key</td>
+    </tr>
+    <tr>
+        <td>onload</td>
+        <td>The browser has finished loading the page</td>
+    </tr>
+</table>
+```
