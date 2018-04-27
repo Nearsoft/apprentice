@@ -115,7 +115,6 @@ As we have mentioned in past chapters, the best way is to have our code separate
 
 You can add listeners to your elements to execute some part of code when certain event happens.
 
-```html
 <table>
     <tr>
         <td>onchange</td>
@@ -142,4 +141,3 @@ You can add listeners to your elements to execute some part of code when certain
         <td>The browser has finished loading the page</td>
     </tr>
 </table>
-```
