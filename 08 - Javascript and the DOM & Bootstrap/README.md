@@ -222,38 +222,44 @@ And combining the css transitions with JavaScript you can do pretty cool things:
 </html>
 ```
 
+Imagine you have an application to display books, when you open the website you do an http request and receive a list of books in JSON (JavaScript Object Notation) format. You now know how to create elements based on that array you received.
 
+index.html
 
 ```html
 <html>
     <head>
-        <style>
-            .book{
-                display: inline-block;
-                width: 200px;
-                height: 300px;
-                border: 1px solid black;
-                border-radius: 3px;
-                margin: 10px;
-                overflow: auto;
-                font-family: sans-serif;
-                padding: 10px;
-            }
-
-            .book h3{
-                text-align: center;
-            }
-
-            .author{
-                text-align: right;
-            }
-        </style>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body id="app">
-        <script type="text/javascript" src="hola.js"></script>
+        <script type="text/javascript" src="script.js"></script>
     </body>
 </html>
 ```
+
+```css
+.book{
+    display: inline-block;
+    width: 200px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin: 10px;
+    overflow: auto;
+    font-family: sans-serif;
+    padding: 10px;
+}
+
+.book h3{
+    text-align: center;
+}
+
+.author{
+    text-align: right;
+}
+```
+
+script.js
 
 ```js
 var app = document.getElementById('app');
