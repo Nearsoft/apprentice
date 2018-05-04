@@ -1,4 +1,7 @@
 ## What is React?
+
+> ⚠️ If you want to know more about developing front end applications make sure to visit [www.fullstackreact.com](https://www.fullstackreact.com/30-days-of-react/day-1/) 
+
 React is a JavaScript library for building user interfaces. It is the view layer for web applications.
 
 At the heart, all React applications are components. A component is a self-contained module that renders some output. We can write interface elements like a button or an input field as a React component. Conceptually, components are JavaScript functions, they accept inputs called `“props”` and return React elements describing what should appear on the screen.
