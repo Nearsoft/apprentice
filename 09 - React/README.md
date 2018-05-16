@@ -16,7 +16,7 @@ For example, let's take our own Twitter clone app and look at the timeline. The 
 
 >💡 Components let you split the UI into independent, reusable pieces, and think about each piece in isolation.
 
-## How does it works?
+## How does it work?
 Unlike we already saw in [08 - Javascript and the DOM & Bootstrap](https://github.com/Nearsoft/apprentice/tree/master/08%20-%20Javascript%20and%20the%20DOM%20%26%20Bootstrap), React does not operates directly on the browser's Document Object Model (DOM) immediately, but on a virtual DOM.
 
 That is, rather than manipulating the document in a browser after changes to our data (which can be quite slow) it resolves changes on a DOM built and run entirely in memory. After the virtual DOM has been updated, React intelligently determines what changes to make to the actual browser's DOM.
