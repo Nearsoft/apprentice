@@ -80,7 +80,7 @@ public static void main() {
 What would happen if we try to change the balance? Can I be the richest person 
 in the world?
 
-Abstraction
+## Abstraction
 Abstraction is the principle of generalization. This requires that we move from
 a specific instance to a more generalized concept by thinking about the most
 basic information and function of an object.
