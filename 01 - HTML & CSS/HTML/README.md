@@ -1,26 +1,24 @@
 # HTML
 
-All websites you visit daily, even some apps for your smartphone are created with HTML. What's HTML? The definition is Hyper Text Markup Language. Remember when we talked about Hyper Text on the How The Internet Works topic? Well, here is were things start to makes sense.
+All the websites that you visit daily, even some apps for your smartphone or for you desktop are created with **HTML**. HTML stands for Hypertext Markup Language.
 
 The word Markup comes from the expresion to "Mark up" some manuscript, and that annotations were added to the document in order to add some styles, like changing the font, adding color, changing size of the text, etc.
 
-Let's leave something clear first: HTML it's not a programming language, HTML it's just a Markup Language. This is because HTML is not able to handle logic, you can't create reusable functions neither create variables to storage data, you can't have also control structures, this language allows us to give the structure of a document which will give life to our websites.
+Let's be very clear that HTML it's not a programming language. It is a language but it's just a markup one. This is because HTML is not able to handle logic, you can't create reusable functions neither create variables to storage data, moreover you don't have control structures. This language allows us to give the structure of a document which will give life to our websites.
 
-As we said in previous topics, all in the internet are files. At the end, every website is an html file or a group of files, so if you want to start creating your own, open your favorite text editor and create a file with extension `.html`. For convention, the main page of your site should be called `index.html`.
+Every website in the internet is an html file or a group of files, so if you want to start creating your own, open your favorite text editor and create a file with extension `.html`. Conventionally the first page of your site should be called `index.html`.
 
-HTML uses tags in order to markup text and create elements. A tag, generally has a beginning and an end, and receive the name of *Paired tags*. This is the syntax for the root tag:
+HTML uses *tags* in order to markup text and create elements. A tag, generally has a beginning and an end, and receive the name of *Paired tags*. This is the syntax for the root tag:
 
 ```
 <html></html>
 ```
 
-We must have clear that not all the tags will have the same structure, there are other elements that don't have closing tags, just because they are not marking up any text or other elements, these are just elements that will be inserted into the page and tags receive the name of *Single tags*. The syntax of these are similar to this one:
+Not all the tags have the same structure than the one above, there are other elements that don't have closing tags, just because they are not marking up any text or other elements. These elements will be inserted into the page and those tags receive the name of *Single tags*. The syntax of these are similar to this one:
 
 ```
 <img>
 ```
-
-A bit further we will teach you other tags and how to use them, for now just remember that everything inside the tag, in case of being a paired tag, is being affected by the function of the tag.
 
 A tag can also contain extra information that will complement the functionality of the tag, sometimes changing the way the element looks or it's behavior. This data receive the name of *atributte* and this is the way it looks:
 
@@ -50,35 +48,33 @@ Let's open our html file and write the following:
 </html>
 ```
 
-This is the basic structure of a website and everyone of them must have it, let's explain step by step:
+This is the basic structure of a website and all must have it, let's explain step by step:
 
 The first tag you can see there is the `html` (let's hold on the DOCTYPE one, will explain it a bit further). This tag is telling to the browser that this is an html file, and is expecting a couple of tags inside: `head` and `body`.
 
-All inside the `head` tag will not be visible in the display window of the browser. The elements and tags added there will have other purpouses, such as call for external resources as CSS documents, fonts and libraries. Also can contain the path for our favicon, the title of our site, and the image that will appear when sharing a link into a social network, also can contain a description visible for search engines and other uses, but these are the main ones.
+All within the `head` tag won't be visible in the display window of the browser. The elements and tags inside will have other purpouses, such as call for external resources as CSS documents, fonts and libraries. It also can contain the path for our favicon, the title of our site, and the image that will appear when sharing a link into a social network, also can contain a description visible for search engines and other uses, but these are the main ones.
 
-For example, putting the URL https://nearsoft.com as a status on my Facebook will cause this:
+By putting the URL https://nearsoft.com as a status on my Facebook will cause this:
 
 <p align="center">
 <img width="500" align="center" src="https://user-images.githubusercontent.com/8913918/37851054-b074ea56-2e9a-11e8-9203-d2c1493a637f.png">
 </p>
 
-Now, all that's inside the `body` tag will be our "visible" part of the site and this is where we are going to be focused.
+Now, all that's inside the `body` tag will be our "visible" part of the site.
 
-Having this basic structure in a document with html extension we are giving the first step to create our website.
+Now let's back to the `<!DOCTYPE html>` one, this one must be on the first line of your document. This tag is telling to our web browser the type of document is about to read and to apply some standardization rules to determine what to do with the next lines. If you miss including this tag, the browser will open normally your html file and parsing it, but can cause some strange behaviors with our elements, not having some functions or not doing the right ones in the time your site is opened in a different browser.
 
-Now let's back to the `<!DOCTYPE html>` one, this one must be on the first line of your document. This tag is teeling to our web browser the type of document is about to read and to apply some standardization rules to determine what to do with the next lines. If you miss including this tag, the browser will open normally your html file and parsing it, but can cause some strange behaviors with our elements, not having some functions or not doing the right ones in the time your site is opened in a different browser.
-
-There's an organization called [ **The World Wide Web Consortium (W3C)**](https://www.w3.org/Consortium/) who is in charge to create the standards for HTML tags that we use and the rules that web browsers must follow at the time to rendering them. Let's take as example the `h1` tag, which is the one that we use for giving a the main heading to our site. With the help of dev tools from Google Chrome I am able to se what are the rules for that tag by default.
+There's an organization called [ **The World Wide Web Consortium (W3C)**](https://www.w3.org/Consortium/) who's in charge to create the standards for HTML tags that we use and the rules that web browsers must follow at the time to rendering them. Let's take as example the `h1` tag, which is the one we use to have the main heading to our site. With the help of dev tools from Google Chrome I am able to se what are the rules for that tag by default.
 
 <p align="center">
 <img width="500" align="center" src="https://user-images.githubusercontent.com/8913918/37851038-a6e2bc98-2e9a-11e8-8a0e-f545b295f095.png">
 </p>
 
-We can override these styles adding your rules, but let's wait for the CSS course to do that.
+We can override these styles adding your rules, but let's wait for the CSS lesson to do that.
 
-Now let's talk about the tags you will be using the most of the time, beginning with *heading tags*.
+Now let's talk about the tags you will be using the most of the time, starting with *heading tags*.
 
-Heading tags are used to display the headings and titles, we have 6 tags for this: `h1`, `h2`, `h3`, `h4`, `h5` and `h6`. While number is lower, then the size will be bigger:
+Heading tags are used to display the headings and titles, we have 6 tags for this: `h1`, `h2`, `h3`, `h4`, `h5` and `h6`. While number is greater the size will be smaller:
 
 ```
 <h1>Heading 1</h1>
@@ -101,7 +97,7 @@ Let's talk about links now, you can turn almost everything into a link with the 
 <a href="www.google.com">Redirect me to google</a>
 ```
 
-Insert images into the document is done via `img` tag, you only need to pass the path where the image is located into the `src` attribute.
+Inserting images into the document is done using `img` tag, you only need to pass the path where the image is located into the `src` attribute.
 
 ```
 <img src="image.jpg" />
@@ -143,7 +139,7 @@ Now we are going to check the tags used to adding some decoration to the text, l
 
 ## Divisions
 
-Now we are going to see one of the most used tags, the `div`. This define a division of your site, that's it. Pretty easy to understand. If you start thinking about any website you should be able to start recognizing how is divided.
+Now we are going to see one of the most used tags, the `div`. This define a division of your site, that's it. Pretty easy to understand. If you start thinking about any website you should be able to start recognizing how is divided and how differents sections compose the website.
 
 You will be wrapping elements inside a `div` tag and together will give the structure to the view. With some practice you will be able to determine whether or not to use a `div`.
 
@@ -175,7 +171,6 @@ And doing the same, but using the `ol` tag you will have something like this:
     <li>Second</li>
     <li>Third</li>
 </ol>
-
 
 You can change the numbers in `ol` or the bullets for the `ul` using some styles. Let's add a `style` attribute to the `ul` adding the new list style type we want, like this:
 
@@ -352,9 +347,9 @@ You can also merge columns or rows using the `colspan` and `rowspan` attributes:
 
 ## Forms
 
-Forms are one of the most important elements in web applications, these are the way that users can interact with the data, by creating, updating or even deleting data from their records. In social networks that's the way you post a status, upload your photos, create an account, do log in into the application, etc.
+Forms are one of the most important elements in web applications, these are the way that users can interact with the data, by creating, updating or even deleting data from their records. In social networks that's the way you post a status, upload your photos, create an account, how you log in into the application, etc.
 
-Knowing only HTML will be useless to make working forms, this will only create a space to write information or hold a path for a file, do selections, etc.
+HTML will only create a space to write information or hold a path for a file, do selections, etc. But won't make working forms.
 
 The main tag for this is `form` which will be wrapping every other element. We have the `input`, `textarea` and `select` tags here.
 
@@ -393,7 +388,7 @@ The `link` tag will help you to import external resources to your site. This wil
 <link href="resource.path">
 ```
 
-Adding comments to the HTML code is useful to explain others what you are doing or probably explaining why you take that approach. To add comments you need the following syntax:
+Adding comments to the HTML code is useful to explain others what you are doing or probably explaining why you choose that tag or tags instead others. To add comments you need the following syntax:
 
 ```
 <!-- Comment here -->
@@ -432,6 +427,6 @@ Twitter uses it's own too:
 <meta name="twitter:image" content="">
 ```
 
-As summary you must know now that HTML is the skeleton for our website, and will help you to display the information that you want in several ways, inserting graphics, tables, lists, paragraphs, etc. and also you can define the divisions of the layouts inside your html file.
+As summary you must know now that **HTML is the skeleton for our website**, and will help you to display the information you want in several ways, inserting graphics, tables, lists, paragraphs, etc. you can also define the layouts inside your html file using divisions.
 
 There are a lot of tag we didn't see throughout this chapter, such as the `style` tag you can use to write your style rules in your site, also `script` which let you include JavaScript code in your website, `video` to insert a video to your site, etc. but you now know the basis and you can move forward to play with them, try new ones, improve with the ones we just saw and start building your websites!

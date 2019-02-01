@@ -1,6 +1,6 @@
 # CSS
 
-Now that you know HTML and describe the structure of your document, it's time to add some style to your elements! CSS stands for Cascading Style Sheets, and this will describe how your HTML elements will be displayed on the browser.
+Now that you know HTML and describe the structure of your document, it's time to add some style to your elements! **CSS** stands for *Cascading Style Sheets*, and this will describe how your HTML elements will be displayed on the browser.
 
 To get started with CSS we need to know what a selector is and we are going to define what it is first of all. A selector is basically a way to *select* one or more html tags defined on your document. That's all you need to know up to now, of course there are way more to discover with selectors, but that's enough to start writing our first CSS rules.
 
@@ -29,7 +29,7 @@ There are several ways to add styles to your elements. The first is adding the `
 
 It's not recommended to add your styles this way because usually you need a lot of CSS code for a simple website and having your HTML and CSS code in the same document will make it harder to understand. It's better to separate the CSS from your HTML.
 
-There's another way to have your styles in the same HTML file: using the `style` tag. This tag will let you write CSS in a special block for between your HTML tags. A common place to put this tag is inside the `head` of your document, but this can be added in any place of your document and can be used more than one time.
+There's another way to add styles to your elements in the same HTML file: using the `style` tag. This tag will let you write CSS in a special block for between your HTML tags. A common place to put this tag is inside the `head` of your document, but this can be added in any place of your document and can be used more than one time.
 
 ```html
 <!DOCTYPE html>
@@ -77,9 +77,9 @@ body {
 }
 ```
 
-The three examples above are doing the exact same thing.
+Three examples above are doing the exact same thing.
 
-Now that you know how to write CSS and how to include into your HTML document, let's continue with some of the most important styles you need to know:
+Now that you know how to write CSS and how to include into your HTML document, let's continue with some styles you need to know:
 
 ### Display
 
@@ -208,3 +208,37 @@ p {
 `div p` is more specific than `p`, but using a single class selector is even more specific.
 
 You can start thinking on how many combinations you can have to add styles to your elements. That's why it's very important to use only classes for CSS and be specific only when it's needed. A lot of time can be saved when you are creating your website if you know about the specificity rules.
+
+## The Box Model
+
+CSS operates using the *Box Model* in all elements to see how they will behavie against other elements
+
+<p align="center">
+<img width="400" align="center" src="https://s3.amazonaws.com/viking_education/web_development/web_app_eng/css_box_model_chrome.png">
+</p>
+
+There are 4 basic layers in the box model that we need to understand:
+* Content: contains the text or anything inside the element.
+* Padding: this layer is a space located out of the content layer, between the content and the border of the element.
+* Border: easy to understand, the layer surrounding the padding layer.
+* Margin: the outermost layer. This specify the space between the element we are working on and the closest element(s) to it.
+
+## Media Queries
+
+Nowadays all websites should work fine in all devices. Starting from smartphones, tablets, laptops, desktop computers, etc. Media queries allow you to add specific css rules to the website depending on the device size you are navigating into the site.
+
+Take a look at the following code:
+
+```css
+body {
+    background-color: black;
+}
+
+@media (max-width: 400px) {
+  body {
+     background-color: blue;
+  }
+}
+```
+
+The block code surrounded by the brackets from `@media` its defining specific CSS rules for devices with 400px width or less. When you open the site in a laptop the body has a black background color, but when it's opened in a smartphone, the background will be blue.
