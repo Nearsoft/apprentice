@@ -225,7 +225,7 @@ There are 4 basic layers in the box model that we need to understand:
 
 ## Media Queries
 
-Nowadays all websites should work fine in all devices. Starting from smartphones, tablets, laptops, desktop computers, etc. Media queries allow you to add specific css rules to the website depending on the device size you are navigating into the site.
+Nowadays all websites should work fine in all devices, such as smartphones, tablets, laptops, desktop computers, etc. Media queries let you to add specific css rules to the website depending on the device size you are navigating into the site.
 
 Take a look at the following code:
 
