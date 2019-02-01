@@ -1,0 +1,13 @@
+body{
+  background: #eee;
+}
+
+.tweet-image, .ns-logo{
+  width: 50px;
+}
+
+.sidebar, .tweets{
+  background: #fff;
+  padding: 10px;
+  border-radius: 3px;
+}
