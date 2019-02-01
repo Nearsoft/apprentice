@@ -17,7 +17,7 @@ Nearsoft apprentice is a program focused to everyone who wants to learn about so
 * 06 - Introduccion a web applications
 * 07 - Introduccion a React
 * 08 - Ruby
-* 09 - Rails I
+* 09 - Rails
 * 10 - Git
 
 If you need our help you can write us an email <apprentice@nearsoft.com>.
