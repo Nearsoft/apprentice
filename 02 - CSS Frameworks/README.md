@@ -1,8 +1,8 @@
 # CSS Frameworks
 
-Let's start defining _What's a Framework?_
+Let's start defining what's a _Framework_?
 
-Definition by Technopedia:
+Definition by [Technopedia](https://www.techopedia.com/definition/14384/software-framework):
 
 > A software framework is a concrete or conceptual platform where common code with generic functionality can be selectively specialized or overridden by developers or users.
 
