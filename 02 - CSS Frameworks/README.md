@@ -1,10 +1,28 @@
-# Bootstrap
+# CSS Frameworks
 
-[Bootstrap](https://getbootstrap.com/) is one of many frameworks you can use to build your applications. Using one of this frameworks will allow you to be more effective when you are creating a website. On this part of the course we will focus on the part of doing layouts, which is one of the most complex things to do at first when you are learning to develop websites.
+Let's start defining _What's a Framework?_
 
-Bootstrap is currently in the version 4.1.0 and this is the version we will be using. The first thing you need to know of this framework is that you can see this as a couple of files: a css and a js file, where there are already written a lot of css rules you can use with the usage of classes and also there are some components already created, ready to be used and interact with them with minimal or sometimes none code.
+Definition by Technopedia:
 
-As we mention before, we will go over the layout part, which means that we only going to need the css file. To start using bootstrap let's import the css file into our html file. We don't need to download the file, we are going to use a CDN (Content Delivery Network) and just put the link to that file in our code:
+> A software framework is a concrete or conceptual platform where common code with generic functionality can be selectively specialized or overridden by developers or users.
+
+Using a framework is a very recommended option to create almost any software application. We have a bunch of options for a lot of languages. In specific, a CSS framework is a collection of style rules written (usually comes with some JavaScript code) ready to be imported into the HTML and start styling your website. In this case we are going to show you some options you have to build your website:
+
+* [Bootstrap](https://getbootstrap.com/)
+* [Foundation](https://foundation.zurb.com/)
+* [Bulma](https://bulma.io/)
+* [Tailwind CSS](https://tailwindcss.com/docs/what-is-tailwind/)
+* [Semantic UI](https://semantic-ui.com/)
+
+Any of these frameworks above can make you more effective on creating a website. We are going to teach you how to layout your website using Bootstrap. You are going to be able to understand how a CSS framework is imported and how to use it.
+
+Layouting your website could be one of the most complex task to understand and do at first when you are learning to create websites.
+
+## Bootstrap
+
+Let's talk about Bootstrap! This framework is currently in the version 4. You can see this framework as a couple of files: one CSS and the other is a JavaScript file, where there are lot of css rules already written and you can use with the usage of classes. Also there are some components already created, ready to be used and interact with them with minimal or sometimes none code.
+
+As we mention before, we will go over the layout part, which means that we only going to need the css file. To start using bootstrap let's import the css file into our html file. We don't need to download the file, we are going to use a CDN (Content Delivery Network) by adding the reference to the resource into our html:
 
 ```html
 <!DOCTYPE html>
