@@ -792,7 +792,7 @@ while (i < cars.length) {
 console.log("DONE!");
 ```
 
-## Functions in JavaScript
+## <a name="functions-in-javascript" /> Functions in JavaScript
 
 ### Functions as "first-class objects"
 
