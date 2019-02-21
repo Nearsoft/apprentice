@@ -322,3 +322,287 @@ function visit(link){
     window.open(link, '_blank');
 }
 ```
+
+# ES6
+
+ES6 refers to version 6 of the ECMAScript programming language. It is a major enhancement to the JavaScript language, and adds many more features intended to make large-scale software development easier.
+
+We'll see some of the mayor features ES6 gives up next! 
+
+## Classes
+
+JavaScript classes, introduced in ECMAScript 2015, are primarily syntactical sugar over JavaScript's existing prototype-based inheritance. The class syntax does not introduce a new object-oriented inheritance model to JavaScript.
+
+Here we can see how to use a JavaScript Class:
+
+```javascript
+class User {
+
+  constructor(name) {
+    this.name = name;
+  }
+
+  sayHi() {
+    alert(this.name);
+  }
+
+}
+
+let user = new User("John");
+user.sayHi();
+```
+
+The class User {...} here actually does two things:
+
+- Declares a variable User that references the function named "constructor".
+- Puts methods listed in the definition into User.prototype. Here, it includes sayHi and the constructor.
+
+This is syntax sugar over a prototype-based class. Here's how the same class would look using a prototype-based approach.
+
+```javascript
+function User(name) {
+  this.name = name;
+}
+
+User.prototype.sayHi = function() {
+  alert(this.name);
+}
+
+let user = new User("John");
+user.sayHi();
+```
+
+### Constructor Method
+
+The constructor method is a special method for creating and initializing an object created within a class.
+
+There can be only one special method with the name `constructor` in a class. Having more than one occurrence of a constructor method in a class will throw a SyntaxError error.
+A constructor can use the `super` keyword to call the constructor of a parent class. If you do not specify a constructor method, a default constructor is used.
+
+## Variable Types
+
+### `var`
+
+The `var` statement declares a variable, optionally initializing it to a value.
+
+It's the most well known variable declaration statement, and the only one that existed before `let` and `const` were introduced in ES6.
+Variables declared using var are always **`hoisted`** to the top of their `scope`.
+
+When a JavaScript variable is `hoisted` it goes through a process where the variable is declared in it's top-most `function scope` before execution.
+This makes it possible that statements such as the following are possible:
+
+```javascript
+console.log(i); // undefined
+var i = 0;
+```
+
+Here's how the interpreter executes the code after hoisting:
+
+```javascript
+var i;
+console.log(i);
+i = 0;
+```
+The interpreter moved (e.g. “hoisted”) the variable declaration to the top of the scope.
+
+`var`'s are `function-scoped` as we had previously mentioned: scope is limited to the function it was defined in.
+
+```javascript
+function foo() {
+  var i = 0;
+}
+console.log(i); // ReferenceError: i is not defined
+```
+`i` only exists within foo so we get an error..
+
+**var’s are not block-scoped: scope is not limited to the block it was defined in.**
+
+```javascript
+var i = 0
+if (true) {
+  var i = 1;
+}
+console.log(i); // 1
+```
+
+i was still in the “global scope” within the if block. i's value was overwritten, which may have not been the intention.
+
+### `let`
+
+Only difference between `var` and `let` variables is that `let` variables _are_ **block scoped**. This leads to a lot less unexpected behavior.
+
+```javascript
+let i = 0;
+if (true) {
+  let i = 1;
+}
+console.log(i); // 0
+```
+
+Even though i was assigned to 1 in the if block, that assignment was local to the block and therefore our “global” i was still 0. The if block’s scope was separate from the global scope.
+
+### `const`
+`const` variables restricts reassignment of variables.
+
+```javascript
+const i = 0;
+i = 1; // TypeError: Assignment to constant variable.
+```
+
+const also doesn't allow you to declare a variable without assigning its (constant) value
+
+`const i; // SyntaxError: Missing initializer in const declaration`
+
+However, `const` does allow variable mutation (only objects/arrays are mutable in JS).
+
+Array Mutation:
+
+```javascript
+const a = [1];
+const b = a;
+console.log(a === b); // true
+b.push(2);
+console.log(a === b); // true
+console.log(a); /// [ 1, 2 ]
+```
+
+Object Mutation:
+
+```javascript
+const obj = {};
+obj.i = 1;
+console.log(obj); // { i: 1 }
+```
+
+Also like `let`, `const` is also **block scoped**.
+
+## Promises
+
+A Promise is an object representing the eventual completion or failure of an asynchronous operation.
+
+![Promises Process](https://mdn.mozillademos.org/files/15911/promises.png)
+
+A `promise` is a proxy for a value not necessarily known when the promise is created. 
+
+It allows you to associate handlers with an asynchronous action's eventual success value or failure reason. This lets asynchronous methods return values like synchronous methods: instead of immediately returning the final value, the asynchronous method returns a promise to supply the value at some point in the future.
+
+A Promise is in one of these states:
+- `pending`: initial state, neither fulfilled nor rejected.
+- `fulfilled`: meaning that the operation completed successfully.
+- `rejected`: meaning that the operation failed.
+
+Essentially, a promise is a returned object to which you attach callbacks, instead of passing callbacks into a function.
+
+A promise comes with some guarantees:
+
+- Callbacks will never be called before the completion of the current run of the JavaScript event loop.
+- Callbacks added with `then()` even after the success or failure of the asynchronous operation, will be called, as above.
+- Multiple callbacks may be added by calling `then()` several times. Each callback is executed one after another, in the order in which they were inserted.
+
+### `.then()`
+
+.`then` is a method of a promise which takes two arguments, a callback function if the promised is `fullfilled` and a second callback function if the promise is `rejected` (though this last case is a lot less used now and should be substituted with `.catch()`).
+
+`.then` method returns a `Promise` in the `pending` status.
+
+ If the `promise` resolves successfully it will pass in the promises `resolve` value to the callback passed in to the `.then` method.
+ In return it will `fullfill` the promise it returned with the value of the callback as the promises `resolve` value.
+
+This property is what allows **chaining** to be done on promises.
+
+If there's an error and the promise is `rejected ` it throws an error, the promise returned by then gets rejected with the thrown error as its value.
+If there's an callback passed on to the promises `.catch` method, it will execute that callback as it's callback value.
+
+### `.catch()`
+
+The `catch()` method also returns a `Promise` and deals with rejected cases only. It behaves the same as calling `Promise.prototype.then(undefined, onRejected)`.
+
+## Arrow Functions
+
+An arrow function expression has a shorter syntax than a function expression and does not have its own this, arguments, super, or new.target.
+
+```js
+var x = a => a + 1;
+x(4) // returns 5
+``` 
+
+### `this` in arrow functions
+
+Until arrow functions, every new function defined its own this value (based on how function was called, a new object in the case of a constructor, undefined in strict mode function calls, the base object if the function is called as an "object method", etc.).
+
+```javascript
+function Person() {
+  // The Person() constructor defines `this` as an instance of itself.
+  this.age = 0;
+
+  setInterval(function growUp() {
+    // In non-strict mode, the growUp() function defines `this` 
+    // as the global object (because it's where growUp() is executed.), 
+    // which is different from the `this`
+    // defined by the Person() constructor. 
+    this.age++;
+  }, 1000);
+}
+
+var p = new Person();
+```
+
+An arrow function does not have its own this; the this value of the enclosing lexical context is used i.e. Arrow functions follow the normal variable lookup rules. So while searching for this  which is not present in current scope they end up finding this from its enclosing scope 
+
+```javascript
+function Person(){
+  this.age = 0;
+
+  setInterval(() => {
+    this.age++; // |this| properly refers to the Person object
+  }, 1000);
+}
+
+var p = new Person();
+```
+
+### Arrow functions as methods
+
+```javascript
+'use strict';
+
+var obj = {
+  i: 10,
+  b: () => console.log(this.i, this),
+  c: function() {
+    console.log(this.i, this);
+  }
+}
+
+obj.b(); // prints undefined, Window {...} (or the global object)
+obj.c(); // prints 10, Object {...}
+```
+
+## Map
+
+`Map` is a function on the Array object’s prototype which takes a single input parameter — a callback function.
+
+What `map` does is that it will go through every element on the array it is called on and it will execute that function.
+The callback is passed the element we are currently mapping over so we can make any transformations or calculations that we need. After we go through each element, map will return a new array containing the result of the mapping.
+
+```javascript
+    const numbers = [1, 4, 6, 9]  // [1, 4, 6, 9]
+    const byTwo = numbers.map(x => x * 2)  // [2, 8, 12, 18]
+```
+
+The `callback` parameter of map is passed 3 main parameters:
+
+- `CurrentValue`: The current element being processed in the array.
+- `index` (Optional): The index of the current element being processed in the array.
+- `array` (Optional): The array `map` was called upon.
+
+```javascript
+    ['a', 'b', 'c'].map((currentValue, index, originalArray) => {
+      if (index === originalArray.length -1) return currentValue
+      return currentValue + originalArray[index+1]
+    }) // ['ab', 'bc', 'c']
+```
+
+The return value of `map` is NOT the original array modified, but a new array of equal length of the original with the transformed elements inside.
+
+`map` is generally preferred to other iteration methods as it goes more neatly with the functional programming philosophy in JavaScript, though it is not always the case.
