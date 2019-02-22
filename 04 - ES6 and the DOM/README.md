@@ -1,8 +1,6 @@
 # Javascript and DOM
 
-In the previous chapter you learned the basics of JavaScript and you probably were thinking while you were reading: Why JavaScript instead other programming languages? Well the reason is that JavaScript is the only language that runs on the browser and that means you can interact with the DOM using it.
-
-What's the DOM? When the browser loads your website, this create the Document Object Model of your code. The DOM is the model that represents the the page as nodes and objects.
+What's the DOM? When the browser loads your website it creates the Document Object Model of your code. The DOM is the model that represents the the page as nodes and objects.
 
 Take a look at this code:
 
@@ -23,7 +21,7 @@ The following tree represents the website:
 
 ![](https://www.w3schools.com/js/pic_htmltree.gif)
 
-With JavaScript you can add new elements and modify the ones that exist, you can add, change or remove attributes from your elements, so you can change the css of the website and also react to the browser events.
+Javascript has the ability to add, modify and delete elements from the DOM, you can interact also with the attributes of your elements, so you can change the style of the website for example. Also you can react or catch the browser events to handle them or make your website interactive.
 
 To start writing JavaScript code in our page, you need to insert a **script** tag in you document and you are ready to write your code. Let's start with the basics, let's modify the content of our element whose id is `app`, in this case the body:
 
@@ -40,21 +38,21 @@ To start writing JavaScript code in our page, you need to insert a **script** ta
 </html>
 ```
 
-You see what happen? When the page is loaded by the browser, the script is executed and takes the element with id app using this line:
+When the html file is opened by the browser, the script is executed and takes the element with id app using this part of the code:
 
 `document.getElementById("app")`
 
 Having the element selected we can modify the inside content with the property `innerHTML`, in our case we pass the value "Hello World!" and this is inserted into the selected element.
 
-Be careful when using the `innerHTML`, because when you use it, you are setting the whole content of the element with the value. You can use the operator `+=` in order to add content and not to override it.
+Be careful when using the `innerHTML`, because when you use it, you are assigning the whole content of the element with the value you are passing. You can use the operator `+=` in order to add content and not to override it.
 
-Exist also more methods to find elements in the DOM, like:
+There are other existing methods to find elements in the DOM, like:
 
 * document.getElementById(id)
 * document.getElementsByTagName(tagName)
 * document.getElementsByClassName(className)
 
-You can see that getElementById is the only method that returns a single element, while other methods are returning an array of the elements that matches with the parameter we pass.
+The method `getElementById` is the only one that returns a single element, while other methods are returning an array of the elements that matches with the parameter we pass.
 
 Let's say we have the following HTML code
 
